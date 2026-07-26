@@ -321,10 +321,10 @@ function MakroGuide({ color, lang, defaultGoal }) {
 const LANGS = { DE: "🇩🇪 DE", EN: "🇬🇧 EN", ES: "🇪🇸 ES", FR: "🇫🇷 FR" };
 
 const T = {
-  DE: { brand: "INSHAPE MIND", tagline: "Wähle deinen Fokus. Dein Blueprint wartet.", yourFocus: "DEIN FOKUS", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "Die App kommt bald.", appDesc: "KI Coach, Tracking & personalisierte Analysen. Inshape Mind — alles in einer App.", notify: "NOTIFY ME", moreComingSoon: "Mehr als ein Guide", back: "\u2190", impressum: "Impressum", privacy: "Datenschutz", trustTitle: "INSHAPE MIND", aboutTitle: "Über INSHAPE MIND", trustBody: "Ich hab selbst gemerkt: Niemand wird mit Disziplin, dem perfekten Körper oder der richtigen Mentalität geboren. Das alles baut man sich auf — manchmal mühsam, oft inkonsistent, aber Schritt für Schritt.\n\nBuilt Not Born ist das, was ich mir am Anfang gewünscht hätte: ein klarer, ehrlicher Einstieg ohne Bullshit. Kein perfektes System, sondern ein Fundament das funktioniert.\n\nDieser Blueprint ist erst der Anfang. Die App kommt — mit KI-Coaching und Tracking das wirklich auf dich zugeschnitten ist." },
-  EN: { brand: "INSHAPE MIND", tagline: "Choose your focus. Your blueprint is waiting.", yourFocus: "YOUR FOCUS", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "The app is coming soon.", appDesc: "AI Coach, tracking & personalized analysis. Inshape Mind — all in one app.", notify: "NOTIFY ME", moreComingSoon: "More than a guide", back: "\u2190", impressum: "Legal Notice", privacy: "Privacy Policy", trustTitle: "INSHAPE MIND", aboutTitle: "About INSHAPE MIND", trustBody: "I figured this out myself: nobody is born with discipline, the perfect body, or the right mindset. All of it is built — sometimes the hard way, often inconsistently, but step by step.\n\nBuilt Not Born is what I wish I'd had at the start: a clear, honest entry point with no BS. Not a perfect system — a foundation that actually works.\n\nThis blueprint is just the beginning. The app is coming — with AI coaching and tracking that's truly tailored to you." },
-  ES: { brand: "INSHAPE MIND", tagline: "Elige tu enfoque. Tu blueprint te espera.", yourFocus: "TU ENFOQUE", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "La app llega pronto.", appDesc: "Coach IA, seguimiento y análisis personalizados. Inshape Mind — todo en una app.", notify: "AVÍSAME", moreComingSoon: "Más que una guía", back: "\u2190", impressum: "Aviso Legal", privacy: "Privacidad", trustTitle: "INSHAPE MIND", aboutTitle: "Sobre INSHAPE MIND", trustBody: "Lo descubrí yo mismo: nadie nace con disciplina, el cuerpo perfecto o la mentalidad correcta. Todo eso se construye — a veces con esfuerzo, a menudo de forma inconsistente, pero paso a paso.\n\nBuilt Not Born es lo que me hubiera gustado tener al principio: un punto de partida claro y honesto, sin tonterías. No un sistema perfecto, sino una base que realmente funciona.\n\nEste blueprint es solo el comienzo. La app llega — con coaching IA y seguimiento realmente adaptado a ti." },
-  FR: { brand: "INSHAPE MIND", tagline: "Choisis ton objectif. Ton blueprint t'attend.", yourFocus: "TON OBJECTIF", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "L'app arrive bientôt.", appDesc: "Coach IA, suivi & analyses personnalisées. Inshape Mind — tout en une app.", notify: "PRÉVENEZ-MOI", moreComingSoon: "Plus qu'un guide", back: "\u2190", impressum: "Mentions légales", privacy: "Confidentialité", trustTitle: "INSHAPE MIND", aboutTitle: "À propos d'INSHAPE MIND", trustBody: "Je l'ai compris moi-même : personne ne naît avec la discipline, le corps parfait ou le bon mindset. Tout cela se construit — parfois difficilement, souvent de façon inconstante, mais étape par étape.\n\nBuilt Not Born, c'est ce que j'aurais aimé avoir au départ : un point de départ clair et honnête, sans bullshit. Pas un système parfait — une base qui fonctionne vraiment.\n\nCe blueprint n'est que le début. L'app arrive — avec un coaching IA et un suivi vraiment adapté à toi." },
+  DE: { training: "Training", trainingSub: "Abnehmen oder Aufbauen", brand: "INSHAPE MIND", tagline: "Wähle deinen Fokus. Dein Blueprint wartet.", yourFocus: "DEIN FOKUS", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "Die App kommt bald.", appDesc: "KI Coach, Tracking & personalisierte Analysen. Inshape Mind — alles in einer App.", notify: "NOTIFY ME", moreComingSoon: "Mehr als ein Guide", back: "\u2190", impressum: "Impressum", privacy: "Datenschutz", trustTitle: "INSHAPE MIND", aboutTitle: "Über INSHAPE MIND", trustBody: "Ich hab selbst gemerkt: Niemand wird mit Disziplin, dem perfekten Körper oder der richtigen Mentalität geboren. Das alles baut man sich auf — manchmal mühsam, oft inkonsistent, aber Schritt für Schritt.\n\nBuilt Not Born ist das, was ich mir am Anfang gewünscht hätte: ein klarer, ehrlicher Einstieg ohne Bullshit. Kein perfektes System, sondern ein Fundament das funktioniert.\n\nDieser Blueprint ist erst der Anfang. Die App kommt — mit KI-Coaching und Tracking das wirklich auf dich zugeschnitten ist." },
+  EN: { training: "Training", trainingSub: "Cut or Build", brand: "INSHAPE MIND", tagline: "Choose your focus. Your blueprint is waiting.", yourFocus: "YOUR FOCUS", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "The app is coming soon.", appDesc: "AI Coach, tracking & personalized analysis. Inshape Mind — all in one app.", notify: "NOTIFY ME", moreComingSoon: "More than a guide", back: "\u2190", impressum: "Legal Notice", privacy: "Privacy Policy", trustTitle: "INSHAPE MIND", aboutTitle: "About INSHAPE MIND", trustBody: "I figured this out myself: nobody is born with discipline, the perfect body, or the right mindset. All of it is built — sometimes the hard way, often inconsistently, but step by step.\n\nBuilt Not Born is what I wish I'd had at the start: a clear, honest entry point with no BS. Not a perfect system — a foundation that actually works.\n\nThis blueprint is just the beginning. The app is coming — with AI coaching and tracking that's truly tailored to you." },
+  ES: { training: "Entrenamiento", trainingSub: "Definición o Volumen", brand: "INSHAPE MIND", tagline: "Elige tu enfoque. Tu blueprint te espera.", yourFocus: "TU ENFOQUE", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "La app llega pronto.", appDesc: "Coach IA, seguimiento y análisis personalizados. Inshape Mind — todo en una app.", notify: "AVÍSAME", moreComingSoon: "Más que una guía", back: "\u2190", impressum: "Aviso Legal", privacy: "Privacidad", trustTitle: "INSHAPE MIND", aboutTitle: "Sobre INSHAPE MIND", trustBody: "Lo descubrí yo mismo: nadie nace con disciplina, el cuerpo perfecto o la mentalidad correcta. Todo eso se construye — a veces con esfuerzo, a menudo de forma inconsistente, pero paso a paso.\n\nBuilt Not Born es lo que me hubiera gustado tener al principio: un punto de partida claro y honesto, sin tonterías. No un sistema perfecto, sino una base que realmente funciona.\n\nEste blueprint es solo el comienzo. La app llega — con coaching IA y seguimiento realmente adaptado a ti." },
+  FR: { training: "Entraînement", trainingSub: "Sèche ou Masse", brand: "INSHAPE MIND", tagline: "Choisis ton objectif. Ton blueprint t'attend.", yourFocus: "TON OBJECTIF", foundation: "THE BLUEPRINT FOUNDATION\u2122", appSoon: "L'app arrive bientôt.", appDesc: "Coach IA, suivi & analyses personnalisées. Inshape Mind — tout en une app.", notify: "PRÉVENEZ-MOI", moreComingSoon: "Plus qu'un guide", back: "\u2190", impressum: "Mentions légales", privacy: "Confidentialité", trustTitle: "INSHAPE MIND", aboutTitle: "À propos d'INSHAPE MIND", trustBody: "Je l'ai compris moi-même : personne ne naît avec la discipline, le corps parfait ou le bon mindset. Tout cela se construit — parfois difficilement, souvent de façon inconstante, mais étape par étape.\n\nBuilt Not Born, c'est ce que j'aurais aimé avoir au départ : un point de départ clair et honnête, sans bullshit. Pas un système parfait — une base qui fonctionne vraiment.\n\nCe blueprint n'est que le début. L'app arrive — avec un coaching IA et un suivi vraiment adapté à toi." },
 };
 
 // ── CONTENT ───────────────────────────────────────────────────────────────
@@ -1031,9 +1031,12 @@ export default function Blueprint() {
         <div style={{ maxWidth: 360, textAlign: "center" }}>
           <div style={{
             fontSize: "clamp(42px, 11vw, 68px)", fontWeight: 900, lineHeight: 0.88, letterSpacing: "-0.04em",
-            background: "linear-gradient(135deg,#fff 0%,#666 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-            marginBottom: 24
-          }}>BUILT<br/>NOT<br/>BORN</div>
+            color: "#fff", marginBottom: 24
+          }}>
+            BUILT<br/>
+            <span style={{ fontSize: "0.55em", opacity: 0.5, verticalAlign: "middle", position: "relative", top: "-0.05em" }}>NOT</span><br/>
+            BORN
+          </div>
           
           <div style={{ fontSize: 14, color: "#888", marginBottom: 32, lineHeight: 1.6 }}>
             Enter your access code to unlock the Blueprint
@@ -1133,30 +1136,77 @@ export default function Blueprint() {
             ))}
           </div>
           <div style={{ fontSize: 11, letterSpacing: "0.25em", color: "#444", marginBottom: 28, fontWeight: 500 }}>{t.brand}</div>
-          <div style={{ marginBottom: 36, display: "flex", alignItems: "center", justifyContent: "center", gap: "clamp(10px,2.5vw,18px)", flexWrap: "nowrap" }}>
-            <span style={{ display: "inline-block", fontSize: "clamp(38px,11vw,72px)", fontWeight: 900, lineHeight: 0.88, letterSpacing: "-0.04em", background: "linear-gradient(135deg,#fff 0%,#666 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>BUILT</span>
-            <span style={{ fontSize: "clamp(11px,2.6vw,15px)", color: "#333", letterSpacing: "0.2em", fontWeight: 400, textTransform: "uppercase" }}>NOT</span>
-            <span style={{ display: "inline-block", fontSize: "clamp(38px,11vw,72px)", fontWeight: 900, lineHeight: 0.88, letterSpacing: "-0.04em", background: "linear-gradient(135deg,#fff 0%,#666 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>BORN</span>
+          <div style={{ marginBottom: 36, textAlign: "center" }}>
+            <h1 style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-1px", color: "#fff", whiteSpace: "nowrap", margin: 0 }}>
+              BUILT <span style={{ fontSize: "0.55em", opacity: 0.5, verticalAlign: "middle", position: "relative", top: "-0.05em", padding: "0 0.1em" }}>NOT</span> BORN
+            </h1>
           </div>
           <p style={{ color: "#444", fontSize: 14, marginBottom: 40, lineHeight: 1.6 }}>{t.tagline}</p>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-            {goals.map((g) => (
-              <button key={g.id} onClick={() => selectGoal(g.id)} style={{
-                background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)",
-                borderRadius: 16, padding: "18px 20px", cursor: "pointer",
-                display: "flex", alignItems: "center", gap: 14, textAlign: "left",
-                transition: "all 0.2s", width: "100%",
-              }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.055)"; e.currentTarget.style.transform = "translateX(3px)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.025)"; e.currentTarget.style.transform = "translateX(0)"; }}
-              >
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: g.color }}>{g.icon}</div>
-                <div>
-                  <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
-                  <div style={{ color: "#444", fontSize: 12 }}>{g.sub}</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 15 }}>
+            {/* TRAINING ACCORDION */}
+            <div style={{
+              background: "#111", border: "1px solid #333", borderRadius: 16, overflow: "hidden",
+              transition: "transform 0.2s ease, box-shadow 0.2s ease",
+            }}
+              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.1)"; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
+            >
+              <button onClick={() => toggleExpand("training")} style={{
+                width: "100%", background: "none", border: "none", cursor: "pointer",
+                padding: "18px 20px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+              }}>
+                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(232, 255, 59, 0.12)", border: "1px solid rgba(232, 255, 59, 0.28)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#E8FF3B" }}>◈</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{t.training}</div>
+                  <div style={{ color: "#888", fontSize: 12 }}>{t.trainingSub}</div>
                 </div>
-                <div style={{ marginLeft: "auto", color: "#2a2a2a", fontSize: 16 }}>{"\u2192"}</div>
+                <div style={{ color: "#666", fontSize: 16, transition: "transform 0.2s", transform: expanded["training"] ? "rotate(90deg)" : "rotate(0deg)" }}>{"\u2192"}</div>
               </button>
+              
+              {expanded["training"] && (
+                <div style={{ padding: "0 20px 18px 20px", display: "flex", flexDirection: "column", gap: 10 }}>
+                  {goals.filter(g => g.id === "cut" || g.id === "build").map(g => (
+                    <button key={g.id} onClick={() => selectGoal(g.id)} style={{
+                      background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)",
+                      borderRadius: 12, padding: "14px 16px", cursor: "pointer",
+                      display: "flex", alignItems: "center", gap: 12, textAlign: "left",
+                      transition: "all 0.2s", width: "100%",
+                    }}
+                      onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}
+                      onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; }}
+                    >
+                      <div style={{ width: 36, height: 36, borderRadius: 10, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: g.color }}>{g.icon}</div>
+                      <div>
+                        <div style={{ color: "#fff", fontSize: 14, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
+                        <div style={{ color: "#888", fontSize: 11 }}>{g.sub}</div>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* OTHER CATEGORIES */}
+            {goals.filter(g => g.id !== "cut" && g.id !== "build").map((g) => (
+              <div key={g.id} style={{
+                background: "#111", border: "1px solid #333", borderRadius: 16, overflow: "hidden",
+                transition: "transform 0.2s ease, box-shadow 0.2s ease",
+              }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.1)"; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
+              >
+                <button onClick={() => selectGoal(g.id)} style={{
+                  width: "100%", background: "none", border: "none", cursor: "pointer",
+                  padding: "18px 20px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                }}>
+                  <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: g.color }}>{g.icon}</div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
+                    <div style={{ color: "#888", fontSize: 12 }}>{g.sub}</div>
+                  </div>
+                  <div style={{ color: "#666", fontSize: 16 }}>{"\u2192"}</div>
+                </button>
+              </div>
             ))}
           </div>
 
