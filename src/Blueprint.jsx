@@ -1151,9 +1151,13 @@ export default function Blueprint() {
               onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.1)"; }}
               onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
             >
+              <div style={{ width: "100%", height: "110px", background: "url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000&auto=format&fit=crop') center/cover", position: "relative" }}>
+                <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "60%", background: "linear-gradient(to top, #111, transparent)" }} />
+              </div>
               <button onClick={() => toggleExpand("training")} style={{
                 width: "100%", background: "none", border: "none", cursor: "pointer",
-                padding: "18px 20px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                marginTop: "-15px", position: "relative", zIndex: 2
               }}>
                 <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(232, 255, 59, 0.12)", border: "1px solid rgba(232, 255, 59, 0.28)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#E8FF3B" }}>◈</div>
                 <div style={{ flex: 1 }}>
@@ -1187,7 +1191,12 @@ export default function Blueprint() {
             </div>
 
             {/* OTHER CATEGORIES */}
-            {goals.filter(g => g.id !== "cut" && g.id !== "build").map((g) => (
+            {goals.filter(g => g.id !== "cut" && g.id !== "build").map((g, idx) => {
+              const bgUrl = g.id === "nutrition" 
+                ? "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1000&auto=format&fit=crop"
+                : "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop";
+
+              return (
               <div key={g.id} style={{
                 background: "#111", border: "1px solid #333", borderRadius: 16, overflow: "hidden",
                 transition: "transform 0.2s ease, box-shadow 0.2s ease",
@@ -1195,9 +1204,13 @@ export default function Blueprint() {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.1)"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
               >
+                <div style={{ width: "100%", height: "110px", background: `url('${bgUrl}') center/cover`, position: "relative" }}>
+                  <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "60%", background: "linear-gradient(to top, #111, transparent)" }} />
+                </div>
                 <button onClick={() => selectGoal(g.id)} style={{
                   width: "100%", background: "none", border: "none", cursor: "pointer",
-                  padding: "18px 20px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                  padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                  marginTop: "-15px", position: "relative", zIndex: 2
                 }}>
                   <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: g.color }}>{g.icon}</div>
                   <div style={{ flex: 1 }}>
@@ -1207,7 +1220,7 @@ export default function Blueprint() {
                   <div style={{ color: "#666", fontSize: 16 }}>{"\u2192"}</div>
                 </button>
               </div>
-            ))}
+            )})}
           </div>
 
           {/* Trust block — expandable */}
