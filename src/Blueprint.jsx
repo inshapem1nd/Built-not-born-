@@ -332,7 +332,7 @@ const T = {
 const GOALS = {
   DE: [
     {
-      id: "cut", label: "Abnehmen", sub: "Körperfett verlieren, Körper definieren", icon: "◈", color: "#ffffff",
+      id: "cut", label: "Abnehmen", sub: "Körperfett verlieren, Körper definieren", icon: "◈", color: "#E8FF3B",
       sections: [
         {
           title: "Das Fundament", content: [
@@ -362,7 +362,7 @@ const GOALS = {
         }]
     },
     {
-      id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#ffffff",
+      id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#FF6B35",
       sections: [
         {
           title: "Das Fundament", content: [
@@ -392,7 +392,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
+      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#3BFFC8",
       sections: [
         {
           title: "Warum es wichtig ist", content: [
@@ -417,7 +417,7 @@ const GOALS = {
       ]
     },
     {
-      id: "mindset", label: "Mindset", sub: "Der Kopf entscheidet alles andere", icon: "◎", color: "#ffffff",
+      id: "mindset", label: "Mindset", sub: "Der Kopf entscheidet alles andere", icon: "◎", color: "#B57BFF",
       sections: [
         {
           title: "Die Basis", content: [
@@ -445,7 +445,7 @@ const GOALS = {
   ],
   EN: [
     {
-      id: "cut", label: "Cut", sub: "Lose body fat, get defined", icon: "◈", color: "#ffffff",
+      id: "cut", label: "Cut", sub: "Lose body fat, get defined", icon: "◈", color: "#E8FF3B",
       sections: [
         {
           title: "The Foundation", content: [
@@ -475,7 +475,7 @@ const GOALS = {
         }]
     },
     {
-      id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#ffffff",
+      id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#FF6B35",
       sections: [
         {
           title: "The Foundation", content: [
@@ -505,7 +505,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
+      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#3BFFC8",
       sections: [
         {
           title: "Why it matters", content: [
@@ -530,7 +530,7 @@ const GOALS = {
       ]
     },
     {
-      id: "mindset", label: "Mindset", sub: "Your head decides everything else", icon: "◎", color: "#ffffff",
+      id: "mindset", label: "Mindset", sub: "Your head decides everything else", icon: "◎", color: "#B57BFF",
       sections: [
         {
           title: "The Foundation", content: [
@@ -560,7 +560,7 @@ const GOALS = {
 
 GOALS.ES = [
   {
-    id: "cut", label: "Definición", sub: "Pierde grasa, define tu cuerpo", icon: "◈", color: "#ffffff",
+    id: "cut", label: "Definición", sub: "Pierde grasa, define tu cuerpo", icon: "◈", color: "#E8FF3B",
     sections: [
       {
         title: "La Base", content: [
@@ -590,7 +590,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#ffffff",
+    id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#FF6B35",
     sections: [
       {
         title: "La Base", content: [
@@ -620,7 +620,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
+    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#3BFFC8",
     sections: [
       {
         title: "Por qué importa", content: [
@@ -645,7 +645,7 @@ GOALS.ES = [
     ]
   },
   {
-    id: "mindset", label: "Mentalidad", sub: "Tu cabeza decide todo lo demás", icon: "◎", color: "#ffffff",
+    id: "mindset", label: "Mentalidad", sub: "Tu cabeza decide todo lo demás", icon: "◎", color: "#B57BFF",
     sections: [
       {
         title: "La Base", content: [
@@ -674,7 +674,7 @@ GOALS.ES = [
 
 GOALS.FR = [
   {
-    id: "cut", label: "Sèche", sub: "Perds de la graisse, dessine ton corps", icon: "◈", color: "#ffffff",
+    id: "cut", label: "Sèche", sub: "Perds de la graisse, dessine ton corps", icon: "◈", color: "#E8FF3B",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -704,7 +704,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#ffffff",
+    id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#FF6B35",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -734,7 +734,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
+    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#3BFFC8",
     sections: [
       {
         title: "Pourquoi c'est important", content: [
@@ -759,7 +759,7 @@ GOALS.FR = [
     ]
   },
   {
-    id: "mindset", label: "Mindset", sub: "Ta tête décide de tout le reste", icon: "◎", color: "#ffffff",
+    id: "mindset", label: "Mindset", sub: "Ta tête décide de tout le reste", icon: "◎", color: "#B57BFF",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -1159,7 +1159,7 @@ export default function Blueprint() {
                 padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
                 marginTop: "-15px", position: "relative", zIndex: 2
               }}>
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>◈</div>
+                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(232, 255, 59, 0.12)", border: "1px solid rgba(232, 255, 59, 0.28)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>◈</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{t.training}</div>
                   <div style={{ color: "#888", fontSize: 12 }}>{t.trainingSub}</div>
@@ -1212,7 +1212,7 @@ export default function Blueprint() {
                   padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
                   marginTop: "-15px", position: "relative", zIndex: 2
                 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: g.color }}>{g.icon}</div>
+                  <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
                   <div style={{ flex: 1 }}>
                     <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
                     <div style={{ color: "#888", fontSize: 12 }}>{g.sub}</div>
@@ -1321,12 +1321,7 @@ export default function Blueprint() {
           ))}
         </div>
 
-        <div style={{ marginTop: 36, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 18, padding: "22px 20px", textAlign: "center" }}>
-          <div style={{ fontSize: 10, letterSpacing: "0.2em", color: "#333", marginBottom: 10, textTransform: "uppercase" }}>{t.moreComingSoon}</div>
-          <div style={{ fontSize: 17, fontWeight: 900, letterSpacing: "-0.02em", marginBottom: 6 }}>{t.appSoon}</div>
-          <div style={{ fontSize: 12, color: "#444", lineHeight: 1.6, marginBottom: 18 }}>{t.appDesc}</div>
-          <div style={{ display: "inline-block", padding: "11px 22px", background: goal.color, color: "#000", borderRadius: 10, fontSize: 12, fontWeight: 900, letterSpacing: "0.07em", cursor: "pointer" }}>{t.notify}</div>
-        </div>
+
 
         <div style={{ marginTop: 28, textAlign: "center", fontSize: 10, color: "#1a1a1a", letterSpacing: "0.1em" }}>{t.brand} · {t.foundation}</div>
         <FooterLinks />
