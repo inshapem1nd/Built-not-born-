@@ -332,7 +332,7 @@ const T = {
 const GOALS = {
   DE: [
     {
-      id: "cut", label: "Abnehmen", sub: "Körperfett verlieren, Körper definieren", icon: "◈", color: "#E8FF3B",
+      id: "cut", label: "Abnehmen", sub: "Körperfett verlieren, Körper definieren", icon: "◈", color: "#ffffff",
       sections: [
         {
           title: "Das Fundament", content: [
@@ -362,7 +362,7 @@ const GOALS = {
         }]
     },
     {
-      id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#FF6B35",
+      id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#ffffff",
       sections: [
         {
           title: "Das Fundament", content: [
@@ -392,7 +392,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: "◇", color: "#3BFFC8",
+      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: "◇", color: "#ffffff",
       sections: [
         {
           title: "Warum es wichtig ist", content: [
@@ -417,7 +417,7 @@ const GOALS = {
       ]
     },
     {
-      id: "mindset", label: "Mindset", sub: "Der Kopf entscheidet alles andere", icon: "◎", color: "#B57BFF",
+      id: "mindset", label: "Mindset", sub: "Der Kopf entscheidet alles andere", icon: "◎", color: "#ffffff",
       sections: [
         {
           title: "Die Basis", content: [
@@ -445,7 +445,7 @@ const GOALS = {
   ],
   EN: [
     {
-      id: "cut", label: "Cut", sub: "Lose body fat, get defined", icon: "◈", color: "#E8FF3B",
+      id: "cut", label: "Cut", sub: "Lose body fat, get defined", icon: "◈", color: "#ffffff",
       sections: [
         {
           title: "The Foundation", content: [
@@ -475,7 +475,7 @@ const GOALS = {
         }]
     },
     {
-      id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#FF6B35",
+      id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#ffffff",
       sections: [
         {
           title: "The Foundation", content: [
@@ -505,7 +505,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: "◇", color: "#3BFFC8",
+      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: "◇", color: "#ffffff",
       sections: [
         {
           title: "Why it matters", content: [
@@ -530,7 +530,7 @@ const GOALS = {
       ]
     },
     {
-      id: "mindset", label: "Mindset", sub: "Your head decides everything else", icon: "◎", color: "#B57BFF",
+      id: "mindset", label: "Mindset", sub: "Your head decides everything else", icon: "◎", color: "#ffffff",
       sections: [
         {
           title: "The Foundation", content: [
@@ -560,7 +560,7 @@ const GOALS = {
 
 GOALS.ES = [
   {
-    id: "cut", label: "Definición", sub: "Pierde grasa, define tu cuerpo", icon: "◈", color: "#E8FF3B",
+    id: "cut", label: "Definición", sub: "Pierde grasa, define tu cuerpo", icon: "◈", color: "#ffffff",
     sections: [
       {
         title: "La Base", content: [
@@ -590,7 +590,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#FF6B35",
+    id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#ffffff",
     sections: [
       {
         title: "La Base", content: [
@@ -620,7 +620,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: "◇", color: "#3BFFC8",
+    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: "◇", color: "#ffffff",
     sections: [
       {
         title: "Por qué importa", content: [
@@ -645,7 +645,7 @@ GOALS.ES = [
     ]
   },
   {
-    id: "mindset", label: "Mentalidad", sub: "Tu cabeza decide todo lo demás", icon: "◎", color: "#B57BFF",
+    id: "mindset", label: "Mentalidad", sub: "Tu cabeza decide todo lo demás", icon: "◎", color: "#ffffff",
     sections: [
       {
         title: "La Base", content: [
@@ -674,7 +674,7 @@ GOALS.ES = [
 
 GOALS.FR = [
   {
-    id: "cut", label: "Sèche", sub: "Perds de la graisse, dessine ton corps", icon: "◈", color: "#E8FF3B",
+    id: "cut", label: "Sèche", sub: "Perds de la graisse, dessine ton corps", icon: "◈", color: "#ffffff",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -704,7 +704,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#FF6B35",
+    id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#ffffff",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -734,7 +734,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: "◇", color: "#3BFFC8",
+    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: "◇", color: "#ffffff",
     sections: [
       {
         title: "Pourquoi c'est important", content: [
@@ -759,7 +759,7 @@ GOALS.FR = [
     ]
   },
   {
-    id: "mindset", label: "Mindset", sub: "Ta tête décide de tout le reste", icon: "◎", color: "#B57BFF",
+    id: "mindset", label: "Mindset", sub: "Ta tête décide de tout le reste", icon: "◎", color: "#ffffff",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -1159,7 +1159,7 @@ export default function Blueprint() {
                 padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
                 marginTop: "-15px", position: "relative", zIndex: 2
               }}>
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(232, 255, 59, 0.12)", border: "1px solid rgba(232, 255, 59, 0.28)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#E8FF3B" }}>◈</div>
+                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>◈</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{t.training}</div>
                   <div style={{ color: "#888", fontSize: 12 }}>{t.trainingSub}</div>
