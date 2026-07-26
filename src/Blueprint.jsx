@@ -1179,7 +1179,7 @@ export default function Blueprint() {
                       onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}
                       onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; }}
                     >
-                      <div style={{ width: 36, height: 36, borderRadius: 10, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: g.color }}>{g.icon}</div>
+                      <div style={{ width: 36, height: 36, borderRadius: 10, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
                       <div>
                         <div style={{ color: "#fff", fontSize: 14, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
                         <div style={{ color: "#888", fontSize: 11 }}>{g.sub}</div>
