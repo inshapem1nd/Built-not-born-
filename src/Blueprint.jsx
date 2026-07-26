@@ -1159,7 +1159,7 @@ export default function Blueprint() {
                 padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
                 marginTop: "-15px", position: "relative", zIndex: 2
               }}>
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(232, 255, 59, 0.12)", border: "1px solid rgba(232, 255, 59, 0.28)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>◈</div>
+                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>◈</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{t.training}</div>
                   <div style={{ color: "#888", fontSize: 12 }}>{t.trainingSub}</div>
@@ -1179,7 +1179,7 @@ export default function Blueprint() {
                       onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}
                       onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; }}
                     >
-                      <div style={{ width: 36, height: 36, borderRadius: 10, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
+                      <div style={{ width: 36, height: 36, borderRadius: 10, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
                       <div>
                         <div style={{ color: "#fff", fontSize: 14, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
                         <div style={{ color: "#888", fontSize: 11 }}>{g.sub}</div>
@@ -1212,7 +1212,7 @@ export default function Blueprint() {
                   padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
                   marginTop: "-15px", position: "relative", zIndex: 2
                 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
+                  <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
                   <div style={{ flex: 1 }}>
                     <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
                     <div style={{ color: "#888", fontSize: 12 }}>{g.sub}</div>
