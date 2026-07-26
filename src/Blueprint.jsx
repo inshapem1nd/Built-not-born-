@@ -392,7 +392,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: "◇", color: "#ffffff",
+      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
       sections: [
         {
           title: "Warum es wichtig ist", content: [
@@ -505,7 +505,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: "◇", color: "#ffffff",
+      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
       sections: [
         {
           title: "Why it matters", content: [
@@ -620,7 +620,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: "◇", color: "#ffffff",
+    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
     sections: [
       {
         title: "Por qué importa", content: [
@@ -734,7 +734,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: "◇", color: "#ffffff",
+    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#ffffff",
     sections: [
       {
         title: "Pourquoi c'est important", content: [
