@@ -204,6 +204,118 @@ function CalcBuild({ color, lang }) {
   );
 }
 
+
+function MakroGuide({ color, lang, defaultGoal }) {
+  const [ziel, setZiel] = useState(defaultGoal === "build" ? "aufbauen" : "abnehmen");
+  const [level, setLevel] = useState("moderat");
+
+  const t = {
+    DE: { title: "Makro-Guide", sub: "Finde dein Gewicht, wähle dein Aktivitätslevel — fertig.", cut: "Abnehmen", build: "Aufbauen", wenig: "Wenig", moderat: "Moderat", viel: "Viel", pro: "Protein", fat: "Fett", carbs: "Kohlenhydrate", note: "Werte basieren auf Richtwerten für dein Ziel und Aktivitätslevel. Individuelle Abweichungen von ±10–15% sind normal — beobachte über 2–3 Wochen und passe bei Bedarf an." },
+    EN: { title: "Macro Guide", sub: "Find your weight, select your activity level — done.", cut: "Cut", build: "Build", wenig: "Light", moderat: "Moderate", viel: "High", pro: "Protein", fat: "Fat", carbs: "Carbs", note: "Values are guidelines based on your goal and activity level. Individual variations of ±10–15% are normal — monitor for 2–3 weeks and adjust if needed." },
+    ES: { title: "Guía de Macros", sub: "Encuentra tu peso, selecciona tu nivel de actividad — listo.", cut: "Definición", build: "Volumen", wenig: "Ligera", moderat: "Moderada", viel: "Alta", pro: "Proteína", fat: "Grasa", carbs: "Carbohidratos", note: "Los valores son orientativos para tu objetivo y nivel de actividad. Variaciones individuales del ±10–15% son normales — monitorea por 2–3 semanas y ajusta si es necesario." },
+    FR: { title: "Guide des Macros", sub: "Trouve ton poids, choisis ton niveau d'activité — c'est fait.", cut: "Sèche", build: "Masse", wenig: "Légère", moderat: "Modérée", viel: "Élevée", pro: "Protéine", fat: "Lipides", carbs: "Glucides", note: "Les valeurs sont des repères pour votre objectif et niveau d'activité. Des variations individuelles de ±10–15% sont normales — surveillez pendant 2–3 semaines et ajustez si nécessaire." }
+  };
+  const txt = t[lang] || t.EN;
+
+  const DATA = {
+    abnehmen: {
+      label: txt.cut,
+      rows: [
+        { gewicht: "50–60 kg", protein: 110, wenig: { kcal: 1216, fett: 30, kh: 127 }, moderat: { kcal: 1430, fett: 35, kh: 169 }, viel: { kcal: 1645, fett: 40, kh: 211 } },
+        { gewicht: "60–70 kg", protein: 130, wenig: { kcal: 1437, fett: 35, kh: 150 }, moderat: { kcal: 1690, fett: 41, kh: 200 }, viel: { kcal: 1944, fett: 48, kh: 249 } },
+        { gewicht: "70–80 kg", protein: 150, wenig: { kcal: 1658, fett: 41, kh: 173 }, moderat: { kcal: 1950, fett: 48, kh: 230 }, viel: { kcal: 2243, fett: 55, kh: 288 } },
+        { gewicht: "80–90 kg", protein: 170, wenig: { kcal: 1879, fett: 46, kh: 197 }, moderat: { kcal: 2210, fett: 54, kh: 261 }, viel: { kcal: 2542, fett: 62, kh: 326 } },
+        { gewicht: "90–100 kg", protein: 190, wenig: { kcal: 2100, fett: 51, kh: 220 }, moderat: { kcal: 2470, fett: 60, kh: 292 }, viel: { kcal: 2841, fett: 69, kh: 364 } },
+      ],
+    },
+    aufbauen: {
+      label: txt.build,
+      rows: [
+        { gewicht: "50–60 kg", protein: 120, wenig: { kcal: 1636, fett: 49, kh: 179 }, moderat: { kcal: 1925, fett: 58, kh: 231 }, viel: { kcal: 2214, fett: 66, kh: 284 } },
+        { gewicht: "60–70 kg", protein: 140, wenig: { kcal: 1934, fett: 58, kh: 213 }, moderat: { kcal: 2275, fett: 68, kh: 275 }, viel: { kcal: 2616, fett: 78, kh: 338 } },
+        { gewicht: "70–80 kg", protein: 165, wenig: { kcal: 2231, fett: 67, kh: 242 }, moderat: { kcal: 2625, fett: 79, kh: 314 }, viel: { kcal: 3019, fett: 91, kh: 386 } },
+        { gewicht: "80–90 kg", protein: 185, wenig: { kcal: 2529, fett: 76, kh: 277 }, moderat: { kcal: 2975, fett: 89, kh: 358 }, viel: { kcal: 3421, fett: 103, kh: 439 } },
+        { gewicht: "90–100 kg", protein: 205, wenig: { kcal: 2826, fett: 85, kh: 311 }, moderat: { kcal: 3325, fett: 100, kh: 402 }, viel: { kcal: 3824, fett: 115, kh: 493 } },
+      ],
+    },
+  };
+
+  const LEVELS = [
+    { key: "wenig", label: txt.wenig },
+    { key: "moderat", label: txt.moderat },
+    { key: "viel", label: txt.viel },
+  ];
+
+  const zielData = DATA[ziel];
+
+  return (
+    <div style={{ marginTop: 14, background: color + "08", border: `1px solid ${color}20`, borderRadius: 12, padding: "16px" }}>
+      <div style={{ fontSize: 13, fontWeight: 800, color: color, marginBottom: 4 }}>{txt.title}</div>
+      <div style={{ fontSize: 11, color: "#666", marginBottom: 14 }}>{txt.sub}</div>
+
+      <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
+        {Object.entries(DATA).map(([key, val]) => (
+          <button key={key} onClick={() => setZiel(key)} style={{
+            flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+            background: ziel === key ? color : "rgba(255,255,255,0.06)",
+            color: ziel === key ? "#000" : "#555", fontWeight: 700, fontSize: 12, fontFamily: "inherit",
+            transition: "all 0.15s"
+          }}>
+            {val.label}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+        {LEVELS.map((l) => (
+          <button key={l.key} onClick={() => setLevel(l.key)} style={{
+            flex: 1, padding: "8px 0", borderRadius: 10, border: "none", cursor: "pointer",
+            background: level === l.key ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.04)",
+            color: level === l.key ? "#fff" : "#666", fontWeight: 600, fontSize: 11, fontFamily: "inherit",
+            transition: "all 0.15s"
+          }}>
+            {l.label}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        {zielData.rows.map((row) => {
+          const vals = row[level];
+          return (
+            <div key={row.gewicht} style={{
+              background: "rgba(0,0,0,0.3)", borderRadius: 10, padding: "14px", border: `1px solid ${color}15`
+            }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+                <span style={{ fontSize: 13, fontWeight: 700, color: "#fff" }}>{row.gewicht}</span>
+                <span style={{ fontSize: 12, color: color, fontWeight: 700 }}>{vals.kcal} kcal</span>
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8, textAlign: "center" }}>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: 800, color: "#eee" }}>{row.protein}g</div>
+                  <div style={{ fontSize: 9, color: "#555", textTransform: "uppercase", letterSpacing: "0.05em", marginTop: 2 }}>{txt.pro}</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: 800, color: "#eee" }}>{vals.fett}g</div>
+                  <div style={{ fontSize: 9, color: "#555", textTransform: "uppercase", letterSpacing: "0.05em", marginTop: 2 }}>{txt.fat}</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: 800, color: "#eee" }}>{vals.kh}g</div>
+                  <div style={{ fontSize: 9, color: "#555", textTransform: "uppercase", letterSpacing: "0.05em", marginTop: 2 }}>{txt.carbs}</div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <p style={{ fontSize: 10, color: "#444", marginTop: 14, lineHeight: 1.5 }}>
+        {txt.note}
+      </p>
+    </div>
+  );
+}
+
 // ── TRANSLATIONS ──────────────────────────────────────────────────────────
 
 const LANGS = { DE: "🇩🇪 DE", EN: "🇬🇧 EN", ES: "🇪🇸 ES", FR: "🇫🇷 FR" };
@@ -242,7 +354,11 @@ const GOALS = {
             { heading: "Plateaus sind normal — kein Grund zur Panik", body: "Nach 3–4 Wochen stagniert oft das Gewicht. Das ist kein Fehler — der Körper passt sich an. Die Lösung ist nicht radikaler, sondern smarter.", action: "📋 Wenn 2+ Wochen kein Fortschritt: (1) Tracke wieder sauber — das schleicht sich immer ein. (2) +1.000 Schritte täglich. (3) +1 Krafteinheit/Woche. Kleine Stellschrauben zuerst." },
           ]
         }
-      ]
+      ,\n        {
+          title: "Makro-Guide", content: [
+            { heading: "Orientierung ohne Tracking", body: "Wähle dein Ziel, dein Gewicht und dein Aktivitätslevel. Du erhältst sofort eine Orientierung für Kalorien und Makros — ohne kompliziertes Tracking. Perfekt, wenn du einfach nur anfangen willst.", action: "📋 Nutze den Guide unten, um deine täglichen Richtwerte für Protein, Fett und Kohlenhydrate zu bekommen. Halte dich für 2-3 Wochen grob daran und beobachte dein Gewicht.", calc: "makro" }
+          ]
+        }]
     },
     {
       id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#FF6B35",
@@ -267,7 +383,11 @@ const GOALS = {
             { heading: "Recovery aktiv gestalten", body: "Dehnen, Foam Rolling, kalte Dusche — als Investment in mehr Trainingstage. Wer besser recovert, kann öfter und härter trainieren.", action: "📋 5-Min Recovery-Routine nach jedem Training:\n1. 90 Sek Foam Roll auf trainierten Muskelgruppen\n2. 3 statische Dehnungen à 30 Sek\n3. 500ml Wasser + Proteinquelle innerhalb 30 Min\nÜber Monate ist das der Unterschied zwischen Verletzungen und konstanten Gains." },
           ]
         }
-      ]
+      ,\n        {
+          title: "Makro-Guide", content: [
+            { heading: "Orientierung ohne Tracking", body: "Wähle dein Ziel, dein Gewicht und dein Aktivitätslevel. Du erhältst sofort eine Orientierung für Kalorien und Makros — ohne kompliziertes Tracking. Perfekt, wenn du einfach nur anfangen willst.", action: "📋 Nutze den Guide unten, um deine täglichen Richtwerte für Protein, Fett und Kohlenhydrate zu bekommen. Halte dich für 2-3 Wochen grob daran und beobachte dein Gewicht.", calc: "makro" }
+          ]
+        }]
     },
     {
       id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: "◇", color: "#3BFFC8",
@@ -345,7 +465,11 @@ const GOALS = {
             { heading: "Plateaus are normal — don't panic", body: "After 3–4 weeks weight often stalls. That's biology, not failure. The body adapts. The solution: smarter, not more extreme.", action: "📋 If no progress for 2+ weeks: (1) Re-audit your tracking — it always gets sloppy. (2) +1,000 steps daily. (3) +1 strength session/week. Small adjustments first." },
           ]
         }
-      ]
+      ,\n        {
+          title: "Macro Guide", content: [
+            { heading: "Orientation without tracking", body: "Select your goal, weight, and activity level. You'll instantly get a baseline for calories and macros — without complicated tracking. Perfect if you just want to get started.", action: "📋 Use the guide below to get your daily targets for protein, fat, and carbs. Stick to them roughly for 2-3 weeks and monitor your weight.", calc: "makro" }
+          ]
+        }]
     },
     {
       id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#FF6B35",
@@ -370,7 +494,11 @@ const GOALS = {
             { heading: "Active recovery", body: "Stretching, foam rolling, cold shower — as investment in more training days. Better recovery = more frequent and harder training.", action: "📋 5-min recovery routine after every session:\n1. 90 sec foam roll on trained muscle groups\n2. 3 static stretches × 30 sec\n3. 500ml water + protein source within 30 min\nOver months this is the difference between injuries and consistent gains." },
           ]
         }
-      ]
+      ,\n        {
+          title: "Macro Guide", content: [
+            { heading: "Orientation without tracking", body: "Select your goal, weight, and activity level. You'll instantly get a baseline for calories and macros — without complicated tracking. Perfect if you just want to get started.", action: "📋 Use the guide below to get your daily targets for protein, fat, and carbs. Stick to them roughly for 2-3 weeks and monitor your weight.", calc: "makro" }
+          ]
+        }]
     },
     {
       id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: "◇", color: "#3BFFC8",
@@ -450,7 +578,11 @@ GOALS.ES = [
           { heading: "Las mesetas son normales — no pánico", body: "Tras 3–4 semanas el peso suele estancarse. Es biología, no fracaso. El cuerpo se adapta. La solución: más inteligente, no más extrema.", action: "📋 Si llevas 2+ semanas sin progreso: (1) Revisa tu registro — siempre se vuelve impreciso. (2) +1.000 pasos diarios. (3) +1 sesión de fuerza/semana. Ajustes pequeños primero." },
         ]
       }
-    ]
+    ,\n        {
+          title: "Guía de Macros", content: [
+            { heading: "Orientación sin conteo", body: "Selecciona tu objetivo, peso y nivel de actividad. Obtendrás al instante una base de calorías y macros — sin seguimiento complicado. Perfecto si solo quieres empezar.", action: "📋 Usa la guía de abajo para obtener tus objetivos diarios de proteína, grasa y carbohidratos. Cúmplelos a grandes rasgos durante 2-3 semanas y observa tu peso.", calc: "makro" }
+          ]
+        }]
   },
   {
     id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#FF6B35",
@@ -475,7 +607,11 @@ GOALS.ES = [
           { heading: "Recuperación activa", body: "Estiramientos, foam roller, ducha fría — como inversión en más días de entrenamiento. Mejor recuperación = entrenar más a menudo y más duro.", action: "📋 Rutina de 5 min tras cada sesión:\n1. 90 seg foam roller en grupos musculares trabajados\n2. 3 estiramientos estáticos × 30 seg\n3. 500ml agua + proteína dentro de 30 min\nCon meses, esto marca la diferencia entre lesiones y progreso constante." },
         ]
       }
-    ]
+    ,\n        {
+          title: "Guía de Macros", content: [
+            { heading: "Orientación sin conteo", body: "Selecciona tu objetivo, peso y nivel de actividad. Obtendrás al instante una base de calorías y macros — sin seguimiento complicado. Perfecto si solo quieres empezar.", action: "📋 Usa la guía de abajo para obtener tus objetivos diarios de proteína, grasa y carbohidratos. Cúmplelos a grandes rasgos durante 2-3 semanas y observa tu peso.", calc: "makro" }
+          ]
+        }]
   },
   {
     id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: "◇", color: "#3BFFC8",
@@ -554,7 +690,11 @@ GOALS.FR = [
           { heading: "Les plateaux sont normaux — pas de panique", body: "Après 3–4 semaines, le poids stagne souvent. C'est de la biologie, pas un échec. Le corps s'adapte. La solution : plus intelligent, pas plus extrême.", action: "📋 Si aucun progrès depuis 2+ semaines : (1) Revérifie ton suivi — il devient toujours moins précis. (2) +1 000 pas par jour. (3) +1 séance de force/semaine. Petits ajustements d'abord." },
         ]
       }
-    ]
+    ,\n        {
+          title: "Guide Macros", content: [
+            { heading: "Orientation sans suivi", body: "Choisis ton objectif, ton poids et ton niveau d'activité. Tu obtiendras instantanément une base pour tes calories et tes macros — sans suivi compliqué. Parfait si tu veux juste te lancer.", action: "📋 Utilise le guide ci-dessous pour obtenir tes objectifs quotidiens en protéines, lipides et glucides. Respecte-les globalement pendant 2-3 semaines et surveille ton poids.", calc: "makro" }
+          ]
+        }]
   },
   {
     id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#FF6B35",
@@ -579,7 +719,11 @@ GOALS.FR = [
           { heading: "Récupération active", body: "Étirements, foam rolling, douche froide — comme un investissement pour plus de jours d'entraînement. Meilleure récupération = entraînements plus fréquents et plus durs.", action: "📋 Routine de récupération de 5 min après chaque séance :\n1. 90 sec de foam roll sur les groupes musculaires travaillés\n2. 3 étirements statiques de 30 sec\n3. 500ml d'eau + protéine dans les 30 min\nSur des mois, ça fait la différence entre blessures et progrès constants." },
         ]
       }
-    ]
+    ,\n        {
+          title: "Guide Macros", content: [
+            { heading: "Orientation sans suivi", body: "Choisis ton objectif, ton poids et ton niveau d'activité. Tu obtiendras instantanément une base pour tes calories et tes macros — sans suivi compliqué. Parfait si tu veux juste te lancer.", action: "📋 Utilise le guide ci-dessous pour obtenir tes objectifs quotidiens en protéines, lipides et glucides. Respecte-les globalement pendant 2-3 semaines et surveille ton poids.", calc: "makro" }
+          ]
+        }]
   },
   {
     id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: "◇", color: "#3BFFC8",
@@ -1092,6 +1236,7 @@ export default function Blueprint() {
                     <div style={{ background: goal.color + "0c", border: `1px solid ${goal.color}1a`, borderRadius: 10, padding: "14px 16px", fontSize: 12.5, color: "#999", lineHeight: 1.8, whiteSpace: "pre-line", marginBottom: showCalc ? 0 : 0 }}>{item.action}</div>
                     {showCalc && item.calc === "cut" && <CalcCut color={goal.color} lang={lang} />}
                     {showCalc && item.calc === "build" && <CalcBuild color={goal.color} lang={lang} />}
+                    {showCalc && item.calc === "makro" && <MakroGuide color={goal.color} lang={lang} defaultGoal={goal.id} />}
                   </div>
                 )}
               </div>
