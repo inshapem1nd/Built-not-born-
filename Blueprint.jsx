@@ -354,7 +354,8 @@ const GOALS = {
             { heading: "Plateaus sind normal — kein Grund zur Panik", body: "Nach 3–4 Wochen stagniert oft das Gewicht. Das ist kein Fehler — der Körper passt sich an. Die Lösung ist nicht radikaler, sondern smarter.", action: "📋 Wenn 2+ Wochen kein Fortschritt: (1) Tracke wieder sauber — das schleicht sich immer ein. (2) +1.000 Schritte täglich. (3) +1 Krafteinheit/Woche. Kleine Stellschrauben zuerst." },
           ]
         }
-      ,\n        {
+      ,
+        {
           title: "Makro-Guide", content: [
             { heading: "Orientierung ohne Tracking", body: "Wähle dein Ziel, dein Gewicht und dein Aktivitätslevel. Du erhältst sofort eine Orientierung für Kalorien und Makros — ohne kompliziertes Tracking. Perfekt, wenn du einfach nur anfangen willst.", action: "📋 Nutze den Guide unten, um deine täglichen Richtwerte für Protein, Fett und Kohlenhydrate zu bekommen. Halte dich für 2-3 Wochen grob daran und beobachte dein Gewicht.", calc: "makro" }
           ]
@@ -383,7 +384,8 @@ const GOALS = {
             { heading: "Recovery aktiv gestalten", body: "Dehnen, Foam Rolling, kalte Dusche — als Investment in mehr Trainingstage. Wer besser recovert, kann öfter und härter trainieren.", action: "📋 5-Min Recovery-Routine nach jedem Training:\n1. 90 Sek Foam Roll auf trainierten Muskelgruppen\n2. 3 statische Dehnungen à 30 Sek\n3. 500ml Wasser + Proteinquelle innerhalb 30 Min\nÜber Monate ist das der Unterschied zwischen Verletzungen und konstanten Gains." },
           ]
         }
-      ,\n        {
+      ,
+        {
           title: "Makro-Guide", content: [
             { heading: "Orientierung ohne Tracking", body: "Wähle dein Ziel, dein Gewicht und dein Aktivitätslevel. Du erhältst sofort eine Orientierung für Kalorien und Makros — ohne kompliziertes Tracking. Perfekt, wenn du einfach nur anfangen willst.", action: "📋 Nutze den Guide unten, um deine täglichen Richtwerte für Protein, Fett und Kohlenhydrate zu bekommen. Halte dich für 2-3 Wochen grob daran und beobachte dein Gewicht.", calc: "makro" }
           ]
@@ -465,7 +467,8 @@ const GOALS = {
             { heading: "Plateaus are normal — don't panic", body: "After 3–4 weeks weight often stalls. That's biology, not failure. The body adapts. The solution: smarter, not more extreme.", action: "📋 If no progress for 2+ weeks: (1) Re-audit your tracking — it always gets sloppy. (2) +1,000 steps daily. (3) +1 strength session/week. Small adjustments first." },
           ]
         }
-      ,\n        {
+      ,
+        {
           title: "Macro Guide", content: [
             { heading: "Orientation without tracking", body: "Select your goal, weight, and activity level. You'll instantly get a baseline for calories and macros — without complicated tracking. Perfect if you just want to get started.", action: "📋 Use the guide below to get your daily targets for protein, fat, and carbs. Stick to them roughly for 2-3 weeks and monitor your weight.", calc: "makro" }
           ]
@@ -494,7 +497,8 @@ const GOALS = {
             { heading: "Active recovery", body: "Stretching, foam rolling, cold shower — as investment in more training days. Better recovery = more frequent and harder training.", action: "📋 5-min recovery routine after every session:\n1. 90 sec foam roll on trained muscle groups\n2. 3 static stretches × 30 sec\n3. 500ml water + protein source within 30 min\nOver months this is the difference between injuries and consistent gains." },
           ]
         }
-      ,\n        {
+      ,
+        {
           title: "Macro Guide", content: [
             { heading: "Orientation without tracking", body: "Select your goal, weight, and activity level. You'll instantly get a baseline for calories and macros — without complicated tracking. Perfect if you just want to get started.", action: "📋 Use the guide below to get your daily targets for protein, fat, and carbs. Stick to them roughly for 2-3 weeks and monitor your weight.", calc: "makro" }
           ]
@@ -578,7 +582,8 @@ GOALS.ES = [
           { heading: "Las mesetas son normales — no pánico", body: "Tras 3–4 semanas el peso suele estancarse. Es biología, no fracaso. El cuerpo se adapta. La solución: más inteligente, no más extrema.", action: "📋 Si llevas 2+ semanas sin progreso: (1) Revisa tu registro — siempre se vuelve impreciso. (2) +1.000 pasos diarios. (3) +1 sesión de fuerza/semana. Ajustes pequeños primero." },
         ]
       }
-    ,\n        {
+    ,
+        {
           title: "Guía de Macros", content: [
             { heading: "Orientación sin conteo", body: "Selecciona tu objetivo, peso y nivel de actividad. Obtendrás al instante una base de calorías y macros — sin seguimiento complicado. Perfecto si solo quieres empezar.", action: "📋 Usa la guía de abajo para obtener tus objetivos diarios de proteína, grasa y carbohidratos. Cúmplelos a grandes rasgos durante 2-3 semanas y observa tu peso.", calc: "makro" }
           ]
@@ -607,7 +612,8 @@ GOALS.ES = [
           { heading: "Recuperación activa", body: "Estiramientos, foam roller, ducha fría — como inversión en más días de entrenamiento. Mejor recuperación = entrenar más a menudo y más duro.", action: "📋 Rutina de 5 min tras cada sesión:\n1. 90 seg foam roller en grupos musculares trabajados\n2. 3 estiramientos estáticos × 30 seg\n3. 500ml agua + proteína dentro de 30 min\nCon meses, esto marca la diferencia entre lesiones y progreso constante." },
         ]
       }
-    ,\n        {
+    ,
+        {
           title: "Guía de Macros", content: [
             { heading: "Orientación sin conteo", body: "Selecciona tu objetivo, peso y nivel de actividad. Obtendrás al instante una base de calorías y macros — sin seguimiento complicado. Perfecto si solo quieres empezar.", action: "📋 Usa la guía de abajo para obtener tus objetivos diarios de proteína, grasa y carbohidratos. Cúmplelos a grandes rasgos durante 2-3 semanas y observa tu peso.", calc: "makro" }
           ]
@@ -690,7 +696,8 @@ GOALS.FR = [
           { heading: "Les plateaux sont normaux — pas de panique", body: "Après 3–4 semaines, le poids stagne souvent. C'est de la biologie, pas un échec. Le corps s'adapte. La solution : plus intelligent, pas plus extrême.", action: "📋 Si aucun progrès depuis 2+ semaines : (1) Revérifie ton suivi — il devient toujours moins précis. (2) +1 000 pas par jour. (3) +1 séance de force/semaine. Petits ajustements d'abord." },
         ]
       }
-    ,\n        {
+    ,
+        {
           title: "Guide Macros", content: [
             { heading: "Orientation sans suivi", body: "Choisis ton objectif, ton poids et ton niveau d'activité. Tu obtiendras instantanément une base pour tes calories et tes macros — sans suivi compliqué. Parfait si tu veux juste te lancer.", action: "📋 Utilise le guide ci-dessous pour obtenir tes objectifs quotidiens en protéines, lipides et glucides. Respecte-les globalement pendant 2-3 semaines et surveille ton poids.", calc: "makro" }
           ]
@@ -719,7 +726,8 @@ GOALS.FR = [
           { heading: "Récupération active", body: "Étirements, foam rolling, douche froide — comme un investissement pour plus de jours d'entraînement. Meilleure récupération = entraînements plus fréquents et plus durs.", action: "📋 Routine de récupération de 5 min après chaque séance :\n1. 90 sec de foam roll sur les groupes musculaires travaillés\n2. 3 étirements statiques de 30 sec\n3. 500ml d'eau + protéine dans les 30 min\nSur des mois, ça fait la différence entre blessures et progrès constants." },
         ]
       }
-    ,\n        {
+    ,
+        {
           title: "Guide Macros", content: [
             { heading: "Orientation sans suivi", body: "Choisis ton objectif, ton poids et ton niveau d'activité. Tu obtiendras instantanément une base pour tes calories et tes macros — sans suivi compliqué. Parfait si tu veux juste te lancer.", action: "📋 Utilise le guide ci-dessous pour obtenir tes objectifs quotidiens en protéines, lipides et glucides. Respecte-les globalement pendant 2-3 semaines et surveille ton poids.", calc: "makro" }
           ]
