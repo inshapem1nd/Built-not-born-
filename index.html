@@ -1,22 +1,510 @@
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Built Not Born — Inshape Mind</title>
-    <meta name="description" content="Built Not Born Blueprint — dein persönlicher Einstieg in Ernährung, Training und Mindset von Inshape Mind." />
-    <meta name="theme-color" content="#080808" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built Not Born</title>
+    <meta name="description" content="Built Not Born Blueprint — your personal guide to nutrition, training and mindset.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <style>
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-      html, body, #root { min-height: 100%; background: #080808; }
-      body { font-family: 'DM Sans', 'Helvetica Neue', sans-serif; }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Gumroad Overlay Script -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLFS51FTTM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LLFS51FTTM');
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">INSHAPE MIND</div>
+        <div class="lang-flags">
+            <span onclick="changeLanguage('en')" title="English">🇬🇧</span>
+            <span onclick="changeLanguage('de')" title="Deutsch">🇩🇪</span>
+            <span onclick="changeLanguage('es')" title="Español">🇪🇸</span>
+            <span onclick="changeLanguage('fr')" title="Français">🇫🇷</span>
+        </div>
+        <div class="spacer" style="width: 130px;"></div> <!-- Zum Zentrieren der Flaggen -->
+    </header>
+
+    <main class="hero">
+        <div class="container">
+            <h1 class="headline" data-i18n="headline" style="white-space: nowrap; font-weight: 900; letter-spacing: -1.5px;">BUILT NOT BORN</h1>
+        </div>
+        
+        <!-- Das Bild, das bis zum Rand geht -->
+        <img src="images/intro_video_landing_2.jpg" class="hero-image" alt="Blueprint">
+        
+        <div class="container">
+            <p class="subtitle" data-i18n="subtitle">Your ultimate guide to nutrition, training, and an indestructible mindset. Transform your body and mind from the ground up.</p>
+            
+            <div class="features">
+                <details class="feature-accordion color-nutrition">
+                    <summary>
+                        <div class="feat-image-wrapper">
+                            <img src="images/nutrition.jpg" alt="Nutrition" class="feat-image">
+                        </div>
+                        <div class="feat-title-row">
+                            <h3 data-i18n="feat1_title">Nutrition</h3>
+                            <span class="icon">+</span>
+                        </div>
+                    </summary>
+                    <div class="accordion-content">
+                        <p data-i18n="feat1_desc">Clear strategies and plans to optimally fuel your body.</p>
+                        <ul class="feat-list">
+                            <li data-i18n="feat1_list1">Calorie & Macro Guide</li>
+                            <li data-i18n="feat1_list2">Food Lists & Shopping Tips</li>
+                            <li data-i18n="feat1_list3">Supplement Recommendations</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="feature-accordion color-training">
+                    <summary>
+                        <div class="feat-image-wrapper">
+                            <img src="images/sport.jpg" alt="Training" class="feat-image">
+                        </div>
+                        <div class="feat-title-row">
+                            <h3 data-i18n="feat2_title">Training</h3>
+                            <span class="icon">+</span>
+                        </div>
+                    </summary>
+                    <div class="accordion-content">
+                        <p data-i18n="feat2_desc">Efficient and proven methods for maximum muscle growth and strength.</p>
+                        <ul class="feat-list">
+                            <li data-i18n="feat2_list1">System > Motivation</li>
+                            <li data-i18n="feat2_list2">Daily Activity (NEAT) & Recovery</li>
+                            <li data-i18n="feat2_list3">Progression & Volume Management</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details class="feature-accordion color-mindset">
+                    <summary>
+                        <div class="feat-image-wrapper">
+                            <img src="images/mindset.jpg" alt="Mindset" class="feat-image">
+                        </div>
+                        <div class="feat-title-row">
+                            <h3 data-i18n="feat3_title">Mindset</h3>
+                            <span class="icon">+</span>
+                        </div>
+                    </summary>
+                    <div class="accordion-content">
+                        <p data-i18n="feat3_desc">Develop the mental toughness to consistently pursue your goals.</p>
+                        <ul class="feat-list">
+                            <li data-i18n="feat3_list1">Goal Setting & Routine Building</li>
+                            <li data-i18n="feat3_list2">Motivation vs. Discipline</li>
+                            <li data-i18n="feat3_list3">Dealing with Setbacks</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Gumroad Link -->
+            <a href="https://inshapemind.gumroad.com/l/goovng?wanted=true" data-gumroad-single-product="true" class="cta-button" data-i18n="cta">GET INSHAPE</a>
+            <p class="price-info" data-i18n="price_info">Einmalig 9,99€</p>
+        </div>
+    </main>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations">
+        <div class="container">
+            <h2 class="section-title" data-i18n="rec_title">Meine Empfehlungen</h2>
+            
+            <div class="rec-cards">
+                <div class="rec-card">
+                    <div class="rec-image-wrapper">
+                        <img src="images/creatin.jpeg" alt="Kreatin Monohydrat" class="rec-image">
+                    </div>
+                    <div class="rec-content">
+                        <h3 data-i18n="rec_creatine_title">Kreatin Monohydrat</h3>
+                        <p data-i18n="rec_creatine_desc">Mehr Kraft und Power im Training für effektiveren Muskelaufbau. Zudem deuten Studien auf mögliche Vorteile für die kognitive Leistungsfähigkeit hin. Eines der weltweit am besten erforschten Supplements.</p>
+                        <a href="https://link.amazon/B015CGqXI" target="_blank" rel="noopener noreferrer" class="rec-btn" data-i18n="rec_button">Bei Amazon ansehen</a>
+                    </div>
+                </div>
+                
+                <div class="rec-card">
+                    <div class="rec-image-wrapper">
+                        <img src="images/shaker_video.jpg" alt="Premium Shaker" class="rec-image">
+                    </div>
+                    <div class="rec-content">
+                        <h3 data-i18n="rec_shaker_title">Premium Shaker</h3>
+                        <p data-i18n="rec_shaker_desc">Der perfekte Begleiter für unterwegs. Macht es einfach, bequem und regelmäßig zu trinken. Hergestellt aus BPA-freiem, langlebigem Material.</p>
+                        <a href="https://link.amazon/B059ojjmq" target="_blank" rel="noopener noreferrer" class="rec-btn" data-i18n="rec_button">Bei Amazon ansehen</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="affiliate-disclaimer" data-i18n="rec_disclaimer">* Diese Sektion enthält Affiliate-Links. Wenn du über diese Links einkaufst, erhalte ich eine kleine Provision, ohne dass sich der Preis für dich ändert.</p>
+        </div>
+    </section>
+
+    <!-- Impressum & Datenschutz Section (Initially Hidden) -->
+    <section id="legal-section" class="legal-section" style="display: none;">
+        <div class="container" style="text-align: left; padding: 2rem 5%;">
+            <h2 id="legal-title" style="margin-bottom: 1rem;"></h2>
+            <div id="legal-content-box" style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;"></div>
+            <button onclick="document.getElementById('legal-section').style.display='none'" style="margin-top: 2rem; padding: 0.5rem 1rem; background: var(--accent); color: #fff; border: none; border-radius: 5px; cursor: pointer;">Schließen</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p data-i18n="footer">&copy; 2026 INSHAPE MIND. All rights reserved.</p>
+        <div class="legal-links">
+            <a href="#impressum" onclick="showLegal('impressum')" data-i18n="impressum_link">Impressum</a> | 
+            <a href="#datenschutz" onclick="showLegal('datenschutz')" data-i18n="datenschutz_link">Datenschutz</a>
+        </div>
+    </footer>
+
+    <script>
+        const legalTranslations = {
+            de: {
+                impressum: `
+            <strong>Angaben gemäß § 5 DDG</strong><br><br>
+            Tyrone Kreim<br>
+            Oidtmannhof 4<br>
+            41812 Erkelenz<br>
+            Deutschland<br><br>
+            <strong>Kontakt</strong><br>
+            E-Mail: inshapemind@outlook.com<br><br>
+            <strong>Umsatzsteuer</strong><br>
+            Gemäß § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).<br><br>
+            "Inshape Mind" und "Built Not Born" sind Projektbezeichnungen von Tyrone Kreim.<br><br>
+            <strong>Verbraucherstreitbeilegung</strong><br>
+            Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                `,
+                datenschutz: `
+            <strong>1. Verantwortlicher</strong><br>
+            Tyrone Kreim, Oidtmannhof 4, 41812 Erkelenz, inshapemind@outlook.com<br><br>
+            
+            <strong>2. Welche Daten werden erhoben</strong><br>
+            Diese Anwendung (Built Not Born Blueprint) selbst erhebt, speichert oder übermittelt keine personenbezogenen Daten. Eingaben in den Rechnern (Gewicht, Größe, Alter etc.) werden ausschließlich lokal in deinem Browser verarbeitet und nirgendwo gespeichert oder übertragen.<br><br>
+            
+            <strong>3. Zahlungsabwicklung</strong><br>
+            Der Kauf erfolgt über einen externen Anbieter (Gumroad bzw. Lemon Squeezy). Bei einem Kauf werden deine Daten (z.B. Name, E-Mail-Adresse, Zahlungsdaten) direkt von diesem Anbieter verarbeitet. Es gelten dessen Datenschutzbestimmungen:<br>
+            – Gumroad: gumroad.com/privacy<br>
+            – Lemon Squeezy: lemonsqueezy.com/privacy<br><br>
+            
+            <strong>4. Cookies und Tracking</strong><br>
+            Diese Seite selbst verwendet keine Analyse-Tools oder Tracking-Pixel. Für die fehlerfreie Funktion des Zahlungs-Overlays (Gumroad) können jedoch technisch notwendige Cookies durch diesen Anbieter gesetzt werden.<br><br>
+            
+            <strong>5. Hosting</strong><br>
+            Diese Anwendung wird über Vercel Inc. gehostet. Beim Aufruf der Seite werden technisch notwendige Verbindungsdaten (z.B. IP-Adresse) durch den Hosting-Anbieter verarbeitet. Mehr dazu: vercel.com/legal/privacy-policy<br><br>
+            
+            <strong>6. Affiliate-Links & Amazon Partnerprogramm</strong><br>
+            Diese Website nimmt am Amazon EU-Partnerprogramm teil. Auf unseren Seiten sind Affiliate-Links zu Amazon eingebunden. Wenn du auf einen solchen Link klickst und auf Amazon einkaufst, erhalten wir eine Werbekostenerstattung (Provision). Dabei erfährt Amazon, dass du über unsere Seite gekommen bist, und setzt unter Umständen Cookies ein, um die Herkunft der Bestellung nachvollziehen zu können. Weitere Informationen zur Datennutzung durch Amazon findest du in der Datenschutzerklärung von Amazon: amazon.de/privacy<br><br>
+
+            <strong>7. Deine Rechte</strong><br>
+            Du hast jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde. Wende dich dafür an: inshapemind@outlook.com<br><br>
+            
+            <strong>8. Änderungen</strong><br>
+            Diese Datenschutzerklärung kann bei Weiterentwicklung der Anwendung (z.B. Hinzufügen von Tracking oder Newsletter) angepasst werden.
+                `
+            },
+            en: {
+                impressum: `
+            <strong>Information pursuant to § 5 DDG</strong><br><br>
+            Tyrone Kreim<br>
+            Oidtmannhof 4<br>
+            41812 Erkelenz<br>
+            Germany<br><br>
+            <strong>Contact</strong><br>
+            Email: inshapemind@outlook.com<br><br>
+            <strong>VAT</strong><br>
+            According to § 19 Abs. 1 UStG, no value added tax is charged (small business regulation).<br><br>
+            "Inshape Mind" and "Built Not Born" are project names by Tyrone Kreim.<br><br>
+            <strong>Consumer Dispute Resolution</strong><br>
+            I am not willing and not obliged to participate in dispute resolution proceedings before a consumer arbitration board.
+                `,
+                datenschutz: `
+            <strong>1. Data Controller</strong><br>
+            Tyrone Kreim, Oidtmannhof 4, 41812 Erkelenz, Germany, inshapemind@outlook.com<br><br>
+            <strong>2. Which data is collected</strong><br>
+            This application (Built Not Born Blueprint) itself does not collect, store, or transmit any personal data. Inputs in the calculators (weight, height, age, etc.) are processed exclusively locally in your browser and are not saved or transmitted anywhere.<br><br>
+            <strong>3. Payment Processing</strong><br>
+            Purchases are processed via an external provider (Gumroad or Lemon Squeezy). When making a purchase, your data (e.g., name, email address, payment details) is processed directly by this provider. Their privacy policies apply:<br>
+            – Gumroad: gumroad.com/privacy<br>
+            – Lemon Squeezy: lemonsqueezy.com/privacy<br><br>
+            <strong>4. Cookies and Tracking</strong><br>
+            This site itself does not use analytics tools or tracking pixels. However, technically necessary cookies may be set by the payment provider for the error-free functioning of the payment overlay (Gumroad).<br><br>
+            <strong>5. Hosting</strong><br>
+            This application is hosted via Vercel Inc. When visiting the site, technically necessary connection data (e.g., IP address) is processed by the hosting provider. More info: vercel.com/legal/privacy-policy<br><br>
+            <strong>6. Affiliate Links & Amazon Associates Program</strong><br>
+            This website participates in the Amazon EU Associates Program. Affiliate links to Amazon are integrated on our pages. If you click on such a link and make a purchase on Amazon, we receive an advertising fee (commission). Amazon thereby learns that you came from our site and may set cookies to track the origin of the order. Further information on data usage by Amazon can be found in Amazon's privacy policy: amazon.de/privacy<br><br>
+            <strong>7. Your Rights</strong><br>
+            You have the right to access, rectification, erasure, and restriction of processing of your data at any time, as well as the right to lodge a complaint with a data protection supervisory authority. Contact: inshapemind@outlook.com<br><br>
+            <strong>8. Changes</strong><br>
+            This privacy policy may be adapted as the application evolves.
+                `
+            },
+            es: {
+                impressum: `
+            <strong>Información según el § 5 de la DDG</strong><br><br>
+            Tyrone Kreim<br>
+            Oidtmannhof 4<br>
+            41812 Erkelenz<br>
+            Alemania<br><br>
+            <strong>Contacto</strong><br>
+            Correo electrónico: inshapemind@outlook.com<br><br>
+            <strong>IVA</strong><br>
+            Según el § 19 Abs. 1 UStG (ley alemana del IVA), no se cobra impuesto sobre el valor añadido.<br><br>
+            "Inshape Mind" y "Built Not Born" son nombres de proyectos de Tyrone Kreim.<br><br>
+            <strong>Resolución de litigios de consumo</strong><br>
+            No estoy dispuesto ni obligado a participar en procedimientos de resolución ante una junta arbitral de consumo.
+                `,
+                datenschutz: `
+            <strong>1. Responsable</strong><br>
+            Tyrone Kreim, Oidtmannhof 4, 41812 Erkelenz, Alemania, inshapemind@outlook.com<br><br>
+            <strong>2. Qué datos se recopilan</strong><br>
+            Esta aplicación (Built Not Born Blueprint) no recopila, almacena ni transmite datos personales por sí misma. Las entradas en las calculadoras (peso, altura, edad, etc.) se procesan exclusivamente de forma local en tu navegador.<br><br>
+            <strong>3. Procesamiento de Pagos</strong><br>
+            Las compras se procesan a través de un proveedor externo (Gumroad o Lemon Squeezy). Se aplican sus políticas de privacidad:<br>
+            – Gumroad: gumroad.com/privacy<br>
+            – Lemon Squeezy: lemonsqueezy.com/privacy<br><br>
+            <strong>4. Cookies y Seguimiento</strong><br>
+            Esta página en sí no utiliza herramientas de análisis ni píxeles de seguimiento. Sin embargo, el proveedor de pagos (Gumroad) puede establecer cookies técnicamente necesarias.<br><br>
+            <strong>5. Alojamiento web (Hosting)</strong><br>
+            Esta aplicación está alojada a través de Vercel Inc. Al visitar la página, el proveedor de alojamiento procesa datos de conexión técnicamente necesarios. Más info: vercel.com/legal/privacy-policy<br><br>
+            <strong>6. Enlaces de Afiliados y Amazon</strong><br>
+            Este sitio web participa en el Programa de Afiliados de Amazon EU. Si haces clic en dicho enlace y realizas una compra en Amazon, recibimos una comisión. Amazon sabe que llegaste desde nuestra página y puede utilizar cookies para rastrear el pedido. Más información: amazon.es/privacy<br><br>
+            <strong>7. Tus Derechos</strong><br>
+            Tienes derecho al acceso, rectificación, supresión y limitación del tratamiento de tus datos en cualquier momento. Contacto: inshapemind@outlook.com<br><br>
+            <strong>8. Cambios</strong><br>
+            Esta política de privacidad puede ser adaptada a medida que la aplicación evolucione.
+                `
+            },
+            fr: {
+                impressum: `
+            <strong>Informations conformément au § 5 DDG</strong><br><br>
+            Tyrone Kreim<br>
+            Oidtmannhof 4<br>
+            41812 Erkelenz<br>
+            Allemagne<br><br>
+            <strong>Contact</strong><br>
+            E-Mail : inshapemind@outlook.com<br><br>
+            <strong>TVA</strong><br>
+            Conformément au § 19 Abs. 1 UStG, aucune taxe sur la valeur ajoutée n'est facturée.<br><br>
+            "Inshape Mind" et "Built Not Born" sont des noms de projets de Tyrone Kreim.<br><br>
+            <strong>Règlement des litiges</strong><br>
+            Je ne suis ni disposé ni obligé de participer à des procédures de règlement des litiges devant un conseil d'arbitrage de la consommation.
+                `,
+                datenschutz: `
+            <strong>1. Responsable</strong><br>
+            Tyrone Kreim, Oidtmannhof 4, 41812 Erkelenz, Allemagne, inshapemind@outlook.com<br><br>
+            <strong>2. Quelles données sont collectées</strong><br>
+            Cette application (Built Not Born Blueprint) ne collecte, ne stocke ni ne transmet aucune donnée personnelle elle-même. Les saisies dans les calculatrices (poids, taille, âge, etc.) sont traitées exclusivement localement dans votre navigateur.<br><br>
+            <strong>3. Traitement des paiements</strong><br>
+            Les achats sont traités via un fournisseur externe (Gumroad ou Lemon Squeezy). Leurs politiques de confidentialité s'appliquent :<br>
+            – Gumroad: gumroad.com/privacy<br>
+            – Lemon Squeezy: lemonsqueezy.com/privacy<br><br>
+            <strong>4. Cookies et Suivi</strong><br>
+            Ce site n'utilise lui-même aucun outil d'analyse ni pixel de suivi. Cependant, des cookies techniquement nécessaires peuvent être installés par le fournisseur (Gumroad).<br><br>
+            <strong>5. Hébergement</strong><br>
+            Cette application est hébergée via Vercel Inc. Lors de la visite du site, les données de connexion techniquement nécessaires sont traitées par le fournisseur d'hébergement. En savoir plus : vercel.com/legal/privacy-policy<br><br>
+            <strong>6. Liens d'affiliation et Amazon</strong><br>
+            Ce site participe au Programme Partenaires d'Amazon EU. Si vous cliquez sur un tel lien et effectuez un achat sur Amazon, nous recevons une commission. Amazon apprend ainsi que vous venez de notre site et peut utiliser des cookies pour retracer la commande. Informations : amazon.fr/privacy<br><br>
+            <strong>7. Vos Droits</strong><br>
+            Vous avez le droit à tout moment d'accéder, de rectifier, de supprimer et de limiter le traitement de vos données. Contact : inshapemind@outlook.com<br><br>
+            <strong>8. Modifications</strong><br>
+            Cette politique de confidentialité peut être adaptée au fur et à mesure que l'application évolue.
+                `
+            }
+        };
+
+        const translations = {
+            en: {
+                headline: "BUILT <span class='not-text'>NOT</span> BORN",
+                app_coming: "Inshape App coming soon!",
+                subtitle: "Your ultimate guide to nutrition, training, and an indestructible mindset.<br>Transform your body and mind from the ground up.",
+                cta: "GET INSHAPE",
+                price_info: "One-time payment of $11.43",
+                feat1_title: "Nutrition",
+                feat1_desc: "Clear strategies and plans to optimally fuel your body.",
+                feat1_list1: "Calorie & Macro Guide",
+                feat1_list2: "Food Lists & Shopping Tips",
+                feat1_list3: "Supplement Recommendations",
+                feat2_title: "Training",
+                feat2_desc: "Efficient and proven methods for maximum muscle growth and strength.",
+                feat2_list1: "System > Motivation",
+                feat2_list2: "Daily Activity (NEAT) & Recovery",
+                feat2_list3: "Progression & Volume Management",
+                feat3_title: "Mindset",
+                feat3_desc: "Develop the mental toughness to consistently pursue your goals.",
+                feat3_list1: "Consistency beats intensity",
+                feat3_list2: "Motivation vs. Discipline",
+                feat3_list3: "Mental strength in everyday life",
+                footer: "&copy; 2026 INSHAPE MIND. All rights reserved.",
+                impressum_link: "Legal Notice",
+                datenschutz_link: "Privacy Policy",
+                rec_title: "My Recommendations",
+                rec_creatine_title: "ESN Ultrapure Creatine Monohydrate",
+                rec_creatine_desc: "100% pure creatine monohydrate, with no additives or fillers. Made in Germany, ultra-finely ground for optimal solubility. The classic choice for more strength and muscle growth – scientifically the most thoroughly researched booster ever.",
+                rec_shaker_title: "BlenderBottle Strada",
+                rec_shaker_desc: "Vacuum-insulated 710ml thermal bottle with integrated mixing system – keeps your shake cold for hours. Stainless steel, leak-proof, in a clean matte-black design. 2-in-1: Shaker and water bottle in one.",
+                rec_button: "View on Amazon",
+                rec_disclaimer: "* This section contains affiliate links. If you purchase through these links, I receive a small commission at no extra cost to you."
+            },
+            de: {
+                headline: "BUILT <span class='not-text'>NOT</span> BORN",
+                app_coming: "Inshape App kommt bald!",
+                subtitle: "Dein ultimativer Leitfaden für Ernährung, Training und ein unzerstörbares Mindset.<br>Transformiere deinen Körper und Geist von Grund auf.",
+                cta: "GET INSHAPE",
+                price_info: "Einmalig 9,99€",
+                feat1_title: "Ernährung",
+                feat1_desc: "Klare Strategien und Pläne, um deinen Körper optimal zu versorgen.",
+                feat1_list1: "Kalorien- & Makro-Guide",
+                feat1_list2: "Lebensmittellisten & Einkaufs-Tipps",
+                feat1_list3: "Supplement-Empfehlungen",
+                feat2_title: "Training",
+                feat2_desc: "Effiziente und erprobte Methoden für maximalen Muskelaufbau und Kraft.",
+                feat2_list1: "System > Motivation",
+                feat2_list2: "Alltagsbewegung (NEAT) & Regeneration",
+                feat2_list3: "Progression & Volumen-Management",
+                feat3_title: "Mindset",
+                feat3_desc: "Entwickle die mentale Härte, um deine Ziele konsequent zu verfolgen.",
+                feat3_list1: "Konsistenz schlägt Intensität",
+                feat3_list2: "Motivation vs. Disziplin",
+                feat3_list3: "Mentale Stärke im Alltag",
+                footer: "&copy; 2026 INSHAPE MIND. Alle Rechte vorbehalten.",
+                impressum_link: "Impressum",
+                datenschutz_link: "Datenschutz",
+                rec_title: "Meine Empfehlungen",
+                rec_creatine_title: "ESN Ultrapure Creatine Monohydrate",
+                rec_creatine_desc: "100 % reines Kreatin-Monohydrat, ohne Zusätze oder Füllstoffe. Made in Germany, ultrafein vermahlen für optimale Löslichkeit. Der Klassiker für mehr Kraft und Muskelaufbau – wissenschaftlich der am besten erforschte Booster überhaupt.",
+                rec_shaker_title: "BlenderBottle Strada",
+                rec_shaker_desc: "Vakuumisolierte 710ml-Thermoflasche mit integriertem Mixsystem – hält deinen Shake stundenlang kalt. Edelstahl, auslaufsicher, im cleanen Matte-Black-Design. 2-in-1: Shaker und Trinkflasche in einem.",
+                rec_button: "Bei Amazon ansehen",
+                rec_disclaimer: "* Diese Sektion enthält Affiliate-Links. Wenn du über diese Links einkaufst, erhalte ich eine kleine Provision, ohne dass sich der Preis für dich ändert."
+            },
+            es: {
+                headline: "BUILT <span class='not-text'>NOT</span> BORN",
+                app_coming: "¡Aplicación Inshape próximamente!",
+                subtitle: "Tu guía definitiva sobre nutrición, entrenamiento y una mentalidad indestructible.<br>Transforma tu cuerpo y mente desde cero.",
+                cta: "GET INSHAPE",
+                price_info: "Pago único de 9,99€",
+                feat1_title: "Nutrición",
+                feat1_desc: "Estrategias y planes claros para nutrir tu cuerpo de manera óptima.",
+                feat1_list1: "Guía de Calorías y Macros",
+                feat1_list2: "Listas de Alimentos y Consejos de Compra",
+                feat1_list3: "Recomendaciones de Suplementos",
+                feat2_title: "Entrenamiento",
+                feat2_desc: "Métodos eficientes y probados para el máximo crecimiento muscular y fuerza.",
+                feat2_list1: "Sistema > Motivación",
+                feat2_list2: "Actividad Diaria (NEAT) y Recuperación",
+                feat2_list3: "Progresión y Gestión del Volumen",
+                feat3_title: "Mentalidad",
+                feat3_desc: "Desarrolla la fortaleza mental para perseguir constantemente tus objetivos.",
+                feat3_list1: "La consistencia supera a la intensidad",
+                feat3_list2: "Motivación vs. Disciplina",
+                feat3_list3: "Fortaleza mental en el día a día",
+                footer: "&copy; 2026 INSHAPE MIND. Todos los derechos reservados.",
+                impressum_link: "Aviso Legal",
+                datenschutz_link: "Política de Privacidad",
+                rec_title: "Mis Recomendaciones",
+                rec_creatine_title: "ESN Ultrapure Creatine Monohydrate",
+                rec_creatine_desc: "Monohidrato de creatina 100 % puro, sin aditivos ni rellenos. Fabricado en Alemania, molido ultrafino para una solubilidad óptima. El clásico para más fuerza y crecimiento muscular: científicamente el suplemento más investigado del mundo.",
+                rec_shaker_title: "BlenderBottle Strada",
+                rec_shaker_desc: "Botella térmica aislada al vacío de 710 ml con sistema de mezcla integrado: mantiene tu batido frío durante horas. Acero inoxidable, a prueba de fugas, con un diseño limpio en negro mate. 2 en 1: Shaker y botella de agua en uno.",
+                rec_button: "Ver en Amazon",
+                rec_disclaimer: "* Esta sección contiene enlaces de afiliados. Si compras a través de estos enlaces, recibo una pequeña comisión sin costo adicional para ti."
+            },
+            fr: {
+                headline: "BUILT <span class='not-text'>NOT</span> BORN",
+                app_coming: "Application Inshape à venir !",
+                subtitle: "Votre guide ultime sur la nutrition, l'entraînement et un état d'esprit indestructible.<br>Transformez votre corps et votre esprit de fond en comble.",
+                cta: "GET INSHAPE",
+                price_info: "Paiement unique de 9,99€",
+                feat1_title: "Nutrition",
+                feat1_desc: "Des stratégies et des plans clairs pour nourrir votre corps de manière optimale.",
+                feat1_list1: "Guide des Calories et Macros",
+                feat1_list2: "Listes d'aliments et Conseils d'achat",
+                feat1_list3: "Recommandations de Suppléments",
+                feat2_title: "Entraînement",
+                feat2_desc: "Des méthodes efficaces et éprouvées pour un développement musculaire et une force maximums.",
+                feat2_list1: "Système > Motivation",
+                feat2_list2: "Activité Quotidienne (NEAT) et Récupération",
+                feat2_list3: "Progression et Gestion du Volume",
+                feat3_title: "État d'esprit",
+                feat3_desc: "Développez la force mentale pour poursuivre constamment vos objectifs.",
+                feat3_list1: "La cohérence bat l'intensité",
+                feat3_list2: "Motivation vs. Discipline",
+                feat3_list3: "Force mentale au quotidien",
+                footer: "&copy; 2026 INSHAPE MIND. Tous droits réservés.",
+                impressum_link: "Mentions légales",
+                datenschutz_link: "Politique de confidentialité",
+                rec_title: "Mes Recommandations",
+                rec_creatine_title: "ESN Ultrapure Creatine Monohydrate",
+                rec_creatine_desc: "Créatine monohydrate 100 % pure, sans additifs ni charges. Fabriquée en Allemagne, finement moulue pour une solubilité optimale. Le classique pour plus de force et de croissance musculaire – scientifiquement le booster le plus étudié au monde.",
+                rec_shaker_title: "BlenderBottle Strada",
+                rec_shaker_desc: "Bouteille isotherme sous vide de 710 ml avec système de mélange intégré – garde votre shake froid pendant des heures. Acier inoxydable, anti-fuite, au design noir mat épuré. 2-en-1 : Shaker et gourde en un.",
+                rec_button: "Voir sur Amazon",
+                rec_disclaimer: "* Cette section contient des liens d'affiliation. Si vous achetez via ces liens, je reçois une petite commission sans frais supplémentaires pour vous."
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            // Update active flag opacity
+            const flags = document.querySelectorAll('.lang-flags span');
+            flags.forEach(f => f.style.opacity = '0.4');
+            let activeIndex = { 'en':0, 'de':1, 'es':2, 'fr':3 }[lang];
+            if(flags[activeIndex]) flags[activeIndex].style.opacity = '1';
+        }
+
+        // Accordion Icon Toggle
+        document.querySelectorAll('.feature-accordion').forEach(details => {
+            details.addEventListener('toggle', (e) => {
+                const icon = details.querySelector('.icon');
+                if (details.open) {
+                    icon.textContent = '-';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+
+        function showLegal(type) {
+            const section = document.getElementById('legal-section');
+            const title = document.getElementById('legal-title');
+            const content = document.getElementById('legal-content-box');
+            
+            const lang = document.documentElement.lang || 'en';
+            const texts = legalTranslations[lang] || legalTranslations['en'];
+            
+            if (type === 'impressum') {
+                title.innerText = document.documentElement.lang === 'de' ? 'Impressum' : 'Legal Notice';
+                content.innerHTML = texts.impressum;
+            } else {
+                title.innerText = document.documentElement.lang === 'de' ? 'Datenschutz' : 'Privacy Policy';
+                content.innerHTML = texts.datenschutz;
+            }
+            
+            section.style.display = 'block';
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+        window.onload = () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            let startLang = 'en';
+            if(userLang.startsWith('de')) startLang = 'de';
+            else if(userLang.startsWith('es')) startLang = 'es';
+            else if(userLang.startsWith('fr')) startLang = 'fr';
+            
+            changeLanguage(startLang);
+        };
+    </script>
+</body>
 </html>
