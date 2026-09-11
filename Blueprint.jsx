@@ -332,7 +332,7 @@ const T = {
 const GOALS = {
   DE: [
     {
-      id: "cut", label: "Abnehmen", sub: "Körperfett verlieren, Körper definieren", icon: "◈", color: "#E8FF3B",
+      id: "cut", label: "Abnehmen", sub: "Körperfett verlieren, Körper definieren", icon: "◈", color: "#E6D5B8",
       sections: [
         {
           title: "Das Fundament", content: [
@@ -362,7 +362,7 @@ const GOALS = {
         }]
     },
     {
-      id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#FF6B35",
+      id: "build", label: "Aufbauen", sub: "Muskelmasse gewinnen, stärker werden", icon: "◉", color: "#E6D5B8",
       sections: [
         {
           title: "Das Fundament", content: [
@@ -392,7 +392,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: "◇", color: "#3BFFC8",
+      id: "nutrition", label: "Ernährung", sub: "Basics die wirklich etwas verändern", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#E6D5B8",
       sections: [
         {
           title: "Warum es wichtig ist", content: [
@@ -417,7 +417,7 @@ const GOALS = {
       ]
     },
     {
-      id: "mindset", label: "Mindset", sub: "Der Kopf entscheidet alles andere", icon: "◎", color: "#B57BFF",
+      id: "mindset", label: "Mindset", sub: "Der Kopf entscheidet alles andere", icon: "◎", color: "#E6D5B8",
       sections: [
         {
           title: "Die Basis", content: [
@@ -445,7 +445,7 @@ const GOALS = {
   ],
   EN: [
     {
-      id: "cut", label: "Cut", sub: "Lose body fat, get defined", icon: "◈", color: "#E8FF3B",
+      id: "cut", label: "Cut", sub: "Lose body fat, get defined", icon: "◈", color: "#E6D5B8",
       sections: [
         {
           title: "The Foundation", content: [
@@ -475,7 +475,7 @@ const GOALS = {
         }]
     },
     {
-      id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#FF6B35",
+      id: "build", label: "Build", sub: "Gain muscle mass, get stronger", icon: "◉", color: "#E6D5B8",
       sections: [
         {
           title: "The Foundation", content: [
@@ -505,7 +505,7 @@ const GOALS = {
         }]
     },
     {
-      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: "◇", color: "#3BFFC8",
+      id: "nutrition", label: "Nutrition", sub: "Basics that actually change things", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#E6D5B8",
       sections: [
         {
           title: "Why it matters", content: [
@@ -530,7 +530,7 @@ const GOALS = {
       ]
     },
     {
-      id: "mindset", label: "Mindset", sub: "Your head decides everything else", icon: "◎", color: "#B57BFF",
+      id: "mindset", label: "Mindset", sub: "Your head decides everything else", icon: "◎", color: "#E6D5B8",
       sections: [
         {
           title: "The Foundation", content: [
@@ -560,7 +560,7 @@ const GOALS = {
 
 GOALS.ES = [
   {
-    id: "cut", label: "Definición", sub: "Pierde grasa, define tu cuerpo", icon: "◈", color: "#E8FF3B",
+    id: "cut", label: "Definición", sub: "Pierde grasa, define tu cuerpo", icon: "◈", color: "#E6D5B8",
     sections: [
       {
         title: "La Base", content: [
@@ -590,7 +590,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#FF6B35",
+    id: "build", label: "Volumen", sub: "Gana masa muscular, hazte más fuerte", icon: "◉", color: "#E6D5B8",
     sections: [
       {
         title: "La Base", content: [
@@ -620,7 +620,7 @@ GOALS.ES = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: "◇", color: "#3BFFC8",
+    id: "nutrition", label: "Nutrición", sub: "Lo básico que realmente cambia las cosas", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#E6D5B8",
     sections: [
       {
         title: "Por qué importa", content: [
@@ -645,7 +645,7 @@ GOALS.ES = [
     ]
   },
   {
-    id: "mindset", label: "Mentalidad", sub: "Tu cabeza decide todo lo demás", icon: "◎", color: "#B57BFF",
+    id: "mindset", label: "Mentalidad", sub: "Tu cabeza decide todo lo demás", icon: "◎", color: "#E6D5B8",
     sections: [
       {
         title: "La Base", content: [
@@ -674,7 +674,7 @@ GOALS.ES = [
 
 GOALS.FR = [
   {
-    id: "cut", label: "Sèche", sub: "Perds de la graisse, dessine ton corps", icon: "◈", color: "#E8FF3B",
+    id: "cut", label: "Sèche", sub: "Perds de la graisse, dessine ton corps", icon: "◈", color: "#E6D5B8",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -704,7 +704,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#FF6B35",
+    id: "build", label: "Prise de Masse", sub: "Gagne du muscle, deviens plus fort", icon: "◉", color: "#E6D5B8",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -734,7 +734,7 @@ GOALS.FR = [
         }]
   },
   {
-    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: "◇", color: "#3BFFC8",
+    id: "nutrition", label: "Nutrition", sub: "Les bases qui changent vraiment les choses", icon: <div style={{ width: 13, height: 13, border: "1.5px solid currentColor", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box" }}><div style={{ width: 6, height: 6, background: "currentColor", borderRadius: "50%" }} /></div>, color: "#E6D5B8",
     sections: [
       {
         title: "Pourquoi c'est important", content: [
@@ -759,7 +759,7 @@ GOALS.FR = [
     ]
   },
   {
-    id: "mindset", label: "Mindset", sub: "Ta tête décide de tout le reste", icon: "◎", color: "#B57BFF",
+    id: "mindset", label: "Mindset", sub: "Ta tête décide de tout le reste", icon: "◎", color: "#E6D5B8",
     sections: [
       {
         title: "Les Fondations", content: [
@@ -1056,7 +1056,7 @@ export default function Blueprint() {
           />
 
           <button onClick={handlePasswordSubmit} style={{
-            width: "100%", padding: "14px 16px", background: "#E8FF3B", color: "#000", border: "none",
+            width: "100%", padding: "14px 16px", background: "#E6D5B8", color: "#000", border: "none",
             borderRadius: 10, fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit"
           }}>
             UNLOCK
@@ -1151,11 +1151,15 @@ export default function Blueprint() {
               onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.1)"; }}
               onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
             >
+              <div style={{ width: "100%", height: "110px", background: "url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000&auto=format&fit=crop') center/cover", position: "relative" }}>
+                <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "60%", background: "linear-gradient(to top, #111, transparent)" }} />
+              </div>
               <button onClick={() => toggleExpand("training")} style={{
                 width: "100%", background: "none", border: "none", cursor: "pointer",
-                padding: "18px 20px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                marginTop: "-15px", position: "relative", zIndex: 2
               }}>
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(232, 255, 59, 0.12)", border: "1px solid rgba(232, 255, 59, 0.28)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#E8FF3B" }}>◈</div>
+                <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>◈</div>
                 <div style={{ flex: 1 }}>
                   <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{t.training}</div>
                   <div style={{ color: "#888", fontSize: 12 }}>{t.trainingSub}</div>
@@ -1175,7 +1179,7 @@ export default function Blueprint() {
                       onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}
                       onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.05)"; }}
                     >
-                      <div style={{ width: 36, height: 36, borderRadius: 10, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: g.color }}>{g.icon}</div>
+                      <div style={{ width: 36, height: 36, borderRadius: 10, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
                       <div>
                         <div style={{ color: "#fff", fontSize: 14, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
                         <div style={{ color: "#888", fontSize: 11 }}>{g.sub}</div>
@@ -1187,7 +1191,12 @@ export default function Blueprint() {
             </div>
 
             {/* OTHER CATEGORIES */}
-            {goals.filter(g => g.id !== "cut" && g.id !== "build").map((g) => (
+            {goals.filter(g => g.id !== "cut" && g.id !== "build").map((g, idx) => {
+              const bgUrl = g.id === "nutrition" 
+                ? "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1000&auto=format&fit=crop"
+                : "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop";
+
+              return (
               <div key={g.id} style={{
                 background: "#111", border: "1px solid #333", borderRadius: 16, overflow: "hidden",
                 transition: "transform 0.2s ease, box-shadow 0.2s ease",
@@ -1195,11 +1204,15 @@ export default function Blueprint() {
                 onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(255, 215, 0, 0.1)"; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
               >
+                <div style={{ width: "100%", height: "110px", background: `url('${bgUrl}') center/cover`, position: "relative" }}>
+                  <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "60%", background: "linear-gradient(to top, #111, transparent)" }} />
+                </div>
                 <button onClick={() => selectGoal(g.id)} style={{
                   width: "100%", background: "none", border: "none", cursor: "pointer",
-                  padding: "18px 20px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                  padding: "12px 20px 18px", display: "flex", alignItems: "center", gap: 14, textAlign: "left",
+                  marginTop: "-15px", position: "relative", zIndex: 2
                 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: g.color + "12", border: `1px solid ${g.color}28`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: g.color }}>{g.icon}</div>
+                  <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(255, 255, 255, 0.08)", border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, flexShrink: 0, color: "#ffffff" }}>{g.icon}</div>
                   <div style={{ flex: 1 }}>
                     <div style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 2 }}>{g.label}</div>
                     <div style={{ color: "#888", fontSize: 12 }}>{g.sub}</div>
@@ -1207,7 +1220,7 @@ export default function Blueprint() {
                   <div style={{ color: "#666", fontSize: 16 }}>{"\u2192"}</div>
                 </button>
               </div>
-            ))}
+            )})}
           </div>
 
           {/* Trust block — expandable */}
@@ -1234,7 +1247,7 @@ export default function Blueprint() {
             </button>
             {aboutOpen && (
               <div style={{ padding: "0 22px 24px", position: "relative", zIndex: 1 }}>
-                <div style={{ color: "#777", fontSize: 13, lineHeight: 1.8, whiteSpace: "pre-line" }}>{t.trustBody}</div>
+                <div style={{ color: "#CCCCCC", fontSize: 15, lineHeight: 1.8, whiteSpace: "pre-line" }}>{t.trustBody}</div>
               </div>
             )}
           </div>
@@ -1267,7 +1280,7 @@ export default function Blueprint() {
         <div style={{ background: `linear-gradient(135deg,${goal.color}0d,transparent)`, border: `1px solid ${goal.color}18`, borderRadius: 18, padding: "20px", marginBottom: 22 }}>
           <div style={{ fontSize: 10, letterSpacing: "0.2em", color: goal.color, marginBottom: 6, textTransform: "uppercase" }}>{t.yourFocus}</div>
           <div style={{ fontSize: 26, fontWeight: 900, letterSpacing: "-0.03em", marginBottom: 4 }}>{goal.label}</div>
-          <div style={{ color: "#555", fontSize: 13, lineHeight: 1.5 }}>{goal.sub}</div>
+          <div style={{ color: "#BBBBBB", fontSize: 14, lineHeight: 1.5 }}>{goal.sub}</div>
         </div>
 
         <div style={{ display: "flex", gap: 7, marginBottom: 20, overflowX: "auto", paddingBottom: 4, scrollbarWidth: "none" }}>
@@ -1285,13 +1298,13 @@ export default function Blueprint() {
               <div key={key} style={{ background: open ? "rgba(255,255,255,0.035)" : "rgba(255,255,255,0.02)", border: `1px solid ${open ? goal.color + "28" : "rgba(255,255,255,0.05)"}`, borderRadius: 14, overflow: "hidden", transition: "all 0.2s" }}>
                 <button onClick={() => toggleExpand(key)} style={{ width: "100%", background: "none", border: "none", padding: "16px 18px", cursor: "pointer", display: "flex", alignItems: "flex-start", gap: 12, textAlign: "left", fontFamily: "inherit" }}>
                   <div style={{ width: 7, height: 7, borderRadius: "50%", marginTop: 5, background: open ? goal.color : "#252525", flexShrink: 0, transition: "background 0.2s" }} />
-                  <div style={{ flex: 1, fontSize: 14, fontWeight: 700, color: open ? "#fff" : "#aaa", lineHeight: 1.3 }}>{item.heading}</div>
+                  <div style={{ flex: 1, fontSize: 16, fontWeight: 700, color: open ? "#fff" : "#cccccc", lineHeight: 1.3 }}>{item.heading}</div>
                   <div style={{ color: "#2a2a2a", fontSize: 16, transition: "transform 0.2s", transform: open ? "rotate(45deg)" : "rotate(0deg)", flexShrink: 0 }}>+</div>
                 </button>
                 {open && (
                   <div style={{ padding: "0 18px 18px 37px" }}>
-                    <div style={{ color: "#777", fontSize: 13, lineHeight: 1.75, marginBottom: 14 }}>{item.body}</div>
-                    <div style={{ background: goal.color + "0c", border: `1px solid ${goal.color}1a`, borderRadius: 10, padding: "14px 16px", fontSize: 12.5, color: "#999", lineHeight: 1.8, whiteSpace: "pre-line", marginBottom: showCalc ? 0 : 0 }}>{item.action}</div>
+                    <div style={{ color: "#CCCCCC", fontSize: 15, lineHeight: 1.75, marginBottom: 14 }}>{item.body}</div>
+                    <div style={{ background: goal.color + "0c", border: `1px solid ${goal.color}1a`, borderRadius: 10, padding: "14px 16px", fontSize: 14, color: "#DDDDDD", lineHeight: 1.8, whiteSpace: "pre-line", marginBottom: showCalc ? 0 : 0 }}>{item.action}</div>
                     {showCalc && item.calc === "cut" && <CalcCut color={goal.color} lang={lang} />}
                     {showCalc && item.calc === "build" && <CalcBuild color={goal.color} lang={lang} />}
                     {showCalc && item.calc === "makro" && <MakroGuide color={goal.color} lang={lang} defaultGoal={goal.id} />}
@@ -1308,12 +1321,7 @@ export default function Blueprint() {
           ))}
         </div>
 
-        <div style={{ marginTop: 36, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 18, padding: "22px 20px", textAlign: "center" }}>
-          <div style={{ fontSize: 10, letterSpacing: "0.2em", color: "#333", marginBottom: 10, textTransform: "uppercase" }}>{t.moreComingSoon}</div>
-          <div style={{ fontSize: 17, fontWeight: 900, letterSpacing: "-0.02em", marginBottom: 6 }}>{t.appSoon}</div>
-          <div style={{ fontSize: 12, color: "#444", lineHeight: 1.6, marginBottom: 18 }}>{t.appDesc}</div>
-          <div style={{ display: "inline-block", padding: "11px 22px", background: goal.color, color: "#000", borderRadius: 10, fontSize: 12, fontWeight: 900, letterSpacing: "0.07em", cursor: "pointer" }}>{t.notify}</div>
-        </div>
+
 
         <div style={{ marginTop: 28, textAlign: "center", fontSize: 10, color: "#1a1a1a", letterSpacing: "0.1em" }}>{t.brand} · {t.foundation}</div>
         <FooterLinks />
